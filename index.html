@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Lucas Rollin Ferreira, showcasing expertise in civil engineering, data analysis, and technology.">
+        <meta name="author" content="Lucas Rollin Ferreira">
+        <title>Lucas Rollin Ferreira</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- Open Graph Tags for Social Sharing -->
+        <meta property="og:title" content="Lucas Rollin Ferreira - Portfolio">
+        <meta property="og:description" content="Showcasing expertise in civil engineering, data analysis, and technology.">
+        <meta property="og:image" content="assets/img/headshot.jpg">
+        <meta property="og:url" content="https://github.com/lucas-rollin/lucas-rollin.github.io">
+        <meta property="og:type" content="website">
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Lucas Rollin Ferreira",
+                "jobTitle": "Civil Engineer and Data Analyst",
+                "url": "https://github.com/lucas-rollin/lucas-rollin.github.io",
+                "sameAs": [
+                    "https://linkedin.com/in/lucas-rollin-ferreira",
+                    "https://github.com/lucas-rollin"
+                ]
+            }
+        </script>
+    </head>
+    
+    
+    <body>
+        <header>
+            <div>
+                <img id="avatar" src="assets/img/headshot.png" alt="avatar logo">
+                <h1>Lucas Rollin Ferreira</h1>
+                <p>Soluções inteligentes em tecnologia e Engenharia.</p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#about" class="active">
+                                <span>Sobre</span>
+                                <span class="line"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experience">
+                                <span>Experiência</span>
+                                <span class="line"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                <span>Projetos</span>
+                                <span class="line"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                
+            </div>
+            <div>
+                <ul id="social-icons">
+                    <li><a href="https://github.com/lucas-rollin" target="_blank" aria-label="GitHub (abre em nova página)" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li>
+                    <li><a href="https://www.linkedin.com/in/lucas-rollin-ferreira" target="_blank" aria-label="LinkedIn (abre em nova página)" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
+                    <li><a href="mailto:lucasrollinferreira@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section id="about">
+                <h3>Sobre</h3>
+                <p>
+                    Sou Engenheiro Civil com experiência em planejamento de projetos, análise de dados e construção civil.
+                    Especializado em otimização de processos e gestão operacional, utilizo ferramentas como Python, SQL,
+                    Power BI e MS Project para criar soluções estratégicas.
+                </p>
+                <p>
+                    Atualmente, atuo na <a href="https://www.aresc.sc.gov.br/" target="_blank">ARESC</a>, desempenhando
+                    atividades de fiscalização, regulação e desenvolvimento de dashboards. Também realizo projetos freelance
+                    na área de tecnologia, com foco em soluções personalizadas para análise de dados e planejamento.
+                </p>
+                <p>
+                    Ao longo da minha trajetória, tive a oportunidade de trabalhar na <a href="https://www.scgas.com.br/" 
+                    target="_blank">SCGÁS</a>, onde contribui com o acompanhamento de projetos e a inteligência de mercado.
+                    E também pude trabalhar na <a href="https://www.dacampos.com.br/" target="_blank">D'Campos Construtora</a>,
+                    onde atuei na gestão de projetos com o planejamento e controle de obras, além da gestão da qualidade com a 
+                    elaboração de manuais construtivos e FVS.
+                </p>
+            </section>
+            <section id="experience">
+                <h3>Experiência</h3>
+
+                <a href="https://www.aresc.sc.gov.br/" class="link-box" target="_blank">
+                    <div>
+                        <div class="date">DEZ 2024 — PRESENTE</div>
+                        <div>
+                            <span>
+                                <h4>Engenheiro Civil · ARESC</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="link-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <p>
+                                Realizo atividades de fiscalização e regulação, além de atuar na elaboração de dashboards e na gestão de processos,
+                                contribuindo para a organização e eficiência operacional.
+                            </p>
+                            <ul class="competences">
+                                <li>Power BI</li>
+                                <li>Excel</li>
+                                <li>Análise de Dados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="link-box" target="_blank">
+                    <div>
+                        <div class="date">NOV 2024 — PRESENTE</div>
+                        <div>
+                            <span>
+                                <h4>Desenvolvedor Web e BI · Freelance</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="link-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <p>
+                                Atuação em tecnologia com projetos personalizados, incluindo o desenvolvimento de uma aplicação web, criação de dashboards estratégicos 
+                                para análises financeiras e orçamentárias de obras de engenharia, e implementação de inteligência artificial para categorização automática de sites com base em HTML. 
+                                As soluções são projetadas com foco na eficiência e alinhamento às demandas específicas de cada cliente.
+                            </p>
+                            <ul class="competences">
+                                <li>Django | Python</li>
+                                <li>JavaScript</li>
+                                <li>Power BI</li>
+                                <li>Inteligência Artificial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.scgas.com.br/" class="link-box" target="_blank">
+                    <div>
+                        <div class="date">SET 2023 — JUL 2024</div>
+                        <div>
+                            <span>
+                                <h4>Estagiário de Planejamento · SCGÁS</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="link-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <p>
+                                Desenvolvimento de dashboards estratégicos para monitorar a carteira de projetos e o mercado, mapeamento de processos de gestão de projetos utilizando Bizagi, 
+                                e elaboração de estudos de inteligência de mercado. Essas atividades apoiaram tomadas de decisão estratégicas e trouxeram mais clareza aos processos internos da empresa.
+                            </p>
+                            <ul class="competences">
+                                <li>Power BI</li>
+                                <li>Excel</li>
+                                <li>Análise de Dados</li>
+                                <li>Gestão de Processos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.dacampos.com.br/" class="link-box" target="_blank">
+                    <div>
+                        <div class="date">ABR 2022 — JUL 2023</div>
+                        <div>
+                            <span>
+                                <h4>Estagiário de Engenharia Civil · D'Campos Construtora</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="link-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <p>
+                                Planejamento e elaboração de cronogramas físicos baseados em recursos e restrições, aplicação de abordagens lean para otimizar o desempenho das obras, 
+                                e controle de três projetos totalizando 10 mil m². Realizei levantamentos quantitativos e pedidos via ERP (Sienge), além de contribuir para a padronização de processos construtivos 
+                                por meio de manuais de execução e fichas de verificação de serviço (FVS).
+                            </p>
+                            <ul class="competences">
+                                <li>MS Project</li>
+                                <li>AutoCAD</li>
+                                <li>Excel</li>
+                                <li>Gestão de Projetos</li>
+                                <li>Gestão de Qualidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <div class="link-box">
+                    <div>
+                        <div class="date">NOV 2021 — MAR 2022</div>
+                        <div>
+                            <span>
+                                <h4>Analista de Dados de Jogos · Freelance</h4>
+                            </span>
+                            <p>
+                                Análise de dados para otimizar estratégias em videogames, incluindo parametrização de fórmulas de cálculo de dano e identificação de tendências de jogo. 
+                                Utilizei planilhas avançadas para suporte às decisões e mantive comunicação eficiente via Discord, contribuindo em ambientes colaborativos de alta performance.
+                            </p>
+                            <ul class="competences">
+                                <li>Excel</li>
+                                <li>Análise de Dados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+
+
+            </section>
+            <section id="projects">
+
+                <h3>Projetos</h3>
+                <div class="link-box">
+                    <div>
+                        <div>
+                            <span>
+                                <h4>Costplan</h4>
+                            </span>
+                            <p>Aplicação web para o orçamento projetos de engenharia civil com criação de Planilhas de Preços Unitários (PPU) com base em Composições de Custos predefinidas.</p>
+                            <ul class="competences">
+                                <li>Django | Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>Orçamento</li>
+                            </ul>
+                        </div>
+                        <img src="assets/img/costplan.png" class="project-img" alt="Projeto Costplan — Página de Planilha de Preços Unitários (PPU).">
+                    </div>
+                </div>
+                <a href="https://github.com/Harddus0/cs50fp" class="link-box" target="_blank">
+                    <div>
+                        <div>
+                            <span>
+                                <h4>Hardplan</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="link-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <p>Aplicação web para gerenciamento de projetos de construção utilizando algoritmos de agendamento como o Método do Caminho Crítico (CPM) e a Linha de Balanço (LOB).</p>
+                            <ul class="competences">
+                                <li>Flask | Python</li>
+                                <li>SQL</li>
+                                <li>Planejamento</li>
+                            </ul>
+                        </div>
+                        <img src="assets/img/hardplan.jpg" class="project-img" alt="Projeto Hardplan — Página de Cronograma em Linha de Balanço.">
+                    </div>
+                </a>
+                <a href="https://github.com/Harddus0/cs50sql" class="link-box" target="_blank">
+                    <div>
+                        <div>
+                            <span>
+                                <h4>Hardplan ERP</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="link-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <p>Banco de dados para suporte das principais funcionalidades de um sistema de Planejamento de Recursos Empresariais (ERP) especificamente voltado para empresas de construção.</p>
+                            <ul class="competences">
+                                <li>SQL</li>
+                                <li>Construção Civil</li>
+                            </ul>
+                        </div>
+                        <img src="assets/img/ERP.png" class="project-img" alt="Projeto Hardplan ERP — Diagrama de Relacionamento entre Entidades.">
+                    </div>
+                </a>
+                <a href="https://github.com/Harddus0/cs50p" class="link-box" target="_blank">
+                    <div>
+                        <div>
+                            <span>
+                                <h4>Budgetpy</h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="link-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <p>Aplicação em Python que calcular os custos de projetos de Construção Civil utilizando dados do SINAPI.</p>
+                            <ul class="competences">
+                                <li>Python</li>
+                                <li>Orçamento</li>
+                            </ul>
+                        </div>
+                        <img src="assets/img/budgetpy.png" class="project-img" alt="Projeto Budgetpy — Linha de Comandos com Menu e Cálculo Orçamentário.">
+                    </div>
+                </a>
+            </section>
+
+            <footer>
+                <p>
+                    Criado no <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>
+                    com HTML, <a href="https://sass-lang.com" target="_blank" rel="noopener noreferrer">SCSS</a> e JavaScript. 
+                </p>
+            </footer>
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </main>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

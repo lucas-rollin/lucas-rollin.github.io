@@ -1,0 +1,51 @@
+:root {
+    --bg-color: #122044;
+    --txt-color: #C7D3ED;
+}
+
+body {
+    display: flex;
+    gap: 0.5rem;
+    margin: 3rem;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+
+    >* {
+        width: 100%;
+    }
+}
+
+section {
+    margin-bottom: 50px;
+
+    > h3 {
+        display: none;
+    }
+}
+
+#social-icons {
+    display: flex;
+    gap: 1rem;
+
+    > li {
+        list-style-type: none;
+    }
+}
+
+svg {
+    width: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+    body {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    section > h3 {
+        display: block;
+    }
+}
