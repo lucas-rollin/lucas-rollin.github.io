@@ -253,6 +253,10 @@ main section > h3 {
   width: -moz-fit-content;
   width: fit-content;
 }
+#certificates-link span {
+  position: relative;
+  top: 4px;
+}
 #certificates-link h4 {
   transition: 0.2s ease-out;
   border-bottom: 3px solid transparent;
@@ -310,7 +314,7 @@ ul.competences {
   flex-flow: wrap;
   gap: 0.5rem;
   list-style-type: none;
-  font-size: 80%;
+  font-size: 90%;
   font-weight: 500;
   padding-left: 0;
   margin-bottom: 0;
@@ -343,7 +347,6 @@ footer a:hover {
   background-image: linear-gradient(180deg, #3C5768, #899BA9, #574A41);
   background-color: #574A41;
   background-attachment: scroll, scroll;
-  background-size: auto 120%;
   background-repeat: no-repeat;
   color: var(--header-primary-color);
 }
@@ -466,6 +469,9 @@ footer a:hover {
   main {
     padding: 5rem 2rem;
   }
+  #certificates > div {
+    width: 100%;
+  }
 }
 @media (max-width: 1024px) {
   header {
@@ -494,6 +500,12 @@ footer a:hover {
   #social-icons {
     margin-right: 10%;
   }
+  #certificates > div {
+    padding: 4rem 2rem;
+  }
+  table td:nth-child(4), table th:nth-child(4) {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   header {
@@ -510,5 +522,8 @@ footer a:hover {
   }
   .modal-content {
     width: 100%;
+  }
+  table td:nth-child(3), table th:nth-child(3) {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
