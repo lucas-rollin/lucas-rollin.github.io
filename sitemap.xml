@@ -1,0 +1,28 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+  <url>
+    <loc>https://lucas-rollin.github.io/</loc>
+    <lastmod>2025-06-03T20:56:22+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://lucas-rollin.github.io/resume.pdf</loc>
+    <lastmod>2025-06-03T20:56:22+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lucas-rollin.github.io/certificates/</loc>
+    <lastmod>2025-06-03T20:56:22+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lucas-rollin.github.io/certificates/diploma.pdf</loc>
+    <lastmod>2025-06-03T20:56:22+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://lucas-rollin.github.io/certificates/ecthos.pdf</loc>
+    <lastmod>2025-06-03T20:56:22+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+</urlset>
