@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@source not "./tailwindcss";
+@source not "./daisyui{,*}.mjs";
+
+@plugin "./daisyui.mjs" {
+  themes: corporate --default, night --prefersdark;
+}
+
+:root {
+  --radius-selector: 1rem;
+  --radius-box: 1rem;
+}
+
+@theme {
+  --radius-selector: 1rem;
+  --radius-box: 1rem;
+  --header-width: 35%;
+}
+
+@layer components {
+  .link-custom {
+    @apply hover:text-primary transition-colors duration-200 font-semibold;
+  }
+
+  .tech {
+    @apply font-mono text-[0.95em] text-primary;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main section {
+  scroll-margin-top: 40px; 
+}
+
+[x-cloak] { display: none !important; }
