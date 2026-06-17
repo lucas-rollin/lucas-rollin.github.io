@@ -141,7 +141,7 @@
 <div class="h-screen flex flex-col md:flex-row">
   <header 
     x-data="navbar"
-    class="relative md:fixed top-0 left-0 h-screen w-full md:w-(--header-width) flex flex-col justify-center gap-4 md:gap-20 text-right text-base-100 p-8 lg:p-16 bg-linear-to-b from-primary to-secondary"
+    class="relative md:fixed md:overflow-y-auto top-0 left-0 h-screen w-full md:w-(--header-width) flex flex-col justify-start tall:justify-center gap-4 md:gap-20 text-right text-base-100 p-8 lg:p-16 bg-linear-to-b from-primary to-secondary"
   >
     <div>
       <div class="flex justify-center md:justify-end">
@@ -283,32 +283,38 @@
   <div class="ml-0 md:ml-(--header-width) bg-base-100">
     <main 
       x-data="portfolioModal"
-      class="p-4 md:p-8 max-w-5xl lg:p-16 mt-0 md:mt-8 text-[1.1rem] text-base-content space-y-8 md:space-y-16">
-      
-      <section id="about" class="space-y-4 p-4">
-        <h2 class="text-2xl font-extrabold tracking-tight md:hidden">
+      class="max-w-5xl mx-auto text-[1.1rem] text-base-content px-4 md:px-8 lg:px-16 py-4 md:py-8 mt-0 md:mt-8 lg:py-16 space-y-8 md:space-y-16">
+        
+      <section id="about" class="relative md:static space-y-4">
+        <h2 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
           Sobre
         </h2>
         
-          
-            <p>Sou Engenheiro Civil formado pela <a href="https://ufsc.br/" target="_blank" class="link-custom">UFSC</a> (IAP 8.8/10.0) com especialização em Desenvolvimento Web Full-Stack e Análise de Dados. Desenvolvo aplicações web com <span class="tech">Django</span>, <span class="tech">HTMX</span>, <span class="tech">AlpineJS</span> e <span class="tech">Tailwind CSS</span>, automatizo processos com <span class="tech">Python</span> e <span class="tech">Google Apps Script</span> e construo dashboards estratégicos com <span class="tech">Power BI</span>.</p>
-          
-            <p>Atualmente atuo como Engenheiro Civil na <a href="https://www.aresc.sc.gov.br/" target="_blank" class="link-custom">ARESC</a>, onde desenvolvo aplicações web internas, automatizo rotinas de coleta e processamento de dados, reduzindo o tempo operacional em 40%, e construo dashboards para monitoramento de indicadores regulatórios.</p>
-          
-            <p>Ao longo da minha trajetória trabalhei na <a href="https://www.scgas.com.br/" target="_blank" class="link-custom">SCGÁS</a>, com inteligência de mercado e análise geoespacial, e na <a href="https://www.dacampos.com.br/" target="_blank" class="link-custom">D'Campos Construtora</a>, com planejamento e controle de 4 obras verticais (~12.000 m²). Sou fluente em inglês (C2) e possuo as cinco certificações Harvard CS50: <a href="certificates/" class="link-custom">CS50x, CS50P, CS50 SQL, CS50W e CS50AI</a>.</p>
-          
+        <div class="p-4">
         
+          <div class="space-y-4">
+            
+              <p>Sou Engenheiro Civil formado pela <a href="https://ufsc.br/" target="_blank" class="link-custom">UFSC</a> (IAP 8.8/10.0) com especialização em Desenvolvimento Web Full-Stack e Análise de Dados. Desenvolvo aplicações web com <span class="tech">Django</span>, <span class="tech">HTMX</span>, <span class="tech">AlpineJS</span> e <span class="tech">Tailwind CSS</span>, automatizo processos com <span class="tech">Python</span> e <span class="tech">Google Apps Script</span> e construo dashboards estratégicos com <span class="tech">Power BI</span>.</p>
+            
+              <p>Atualmente atuo como Engenheiro Civil na <a href="https://www.aresc.sc.gov.br/" target="_blank" class="link-custom">ARESC</a>, onde desenvolvo aplicações web internas, automatizo rotinas de coleta e processamento de dados, reduzindo o tempo operacional em 40%, e construo dashboards para monitoramento de indicadores regulatórios.</p>
+            
+              <p>Ao longo da minha trajetória trabalhei na <a href="https://www.scgas.com.br/" target="_blank" class="link-custom">SCGÁS</a>, com inteligência de mercado e análise geoespacial, e na <a href="https://www.dacampos.com.br/" target="_blank" class="link-custom">D'Campos Construtora</a>, com planejamento e controle de 4 obras verticais (~12.000 m²). Sou fluente em inglês (C2) e possuo as cinco certificações Harvard CS50: <a href="certificates/" class="link-custom">CS50x, CS50P, CS50 SQL, CS50W e CS50AI</a>.</p>
+            
+          </div>
+        
+        </div>
       </section>
       
-      <section id="experience" class="space-y-2 md:space-y-4">
-        <h3 class="text-2xl font-extrabold tracking-tight md:hidden px-4">
+      <section id="experience" class="relative md:static space-y-2 md:space-y-4">
+        <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
           Experiência
         </h3>
         
         
-          
+          <div class="space-y-4 md:space-y-2">
             
-<div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-300">
+              
+<div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
 
   <div class="date text-base font-semibold min-w-44 uppercase">
     DEZ 2024 — PRESENTE
@@ -373,9 +379,9 @@
   
 </div>
 
-          
             
-<div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-300">
+              
+<div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
 
   <div class="date text-base font-semibold min-w-44 uppercase">
     NOV 2024 — FEV 2026
@@ -436,9 +442,9 @@
   
 </div>
 
-          
             
-<div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-300">
+              
+<div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
 
   <div class="date text-base font-semibold min-w-44 uppercase">
     SET 2023 — JUL 2024
@@ -499,9 +505,9 @@
   
 </div>
 
-          
             
-<div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-300">
+              
+<div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
 
   <div class="date text-base font-semibold min-w-44 uppercase">
     ABR 2022 — JUL 2023
@@ -562,18 +568,20 @@
   
 </div>
 
-          
+            
+          </div>
         
       </section>
       
-      <section id="projects" class="space-y-2 md:space-y-4">
-        <h3 class="text-2xl font-extrabold tracking-tight md:hidden px-4">
+      <section id="projects" class="relative md:static space-y-2 md:space-y-4">
+        <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
           Projetos
         </h3>
         
         
-          
-            <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
+          <div class="space-y-4 md:space-y-2">
+            
+              <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
   
   <div class="flex-1 space-y-2 md:space-y-4">
     <div class="flex">
@@ -627,8 +635,8 @@
 </div>
 
 
-          
-            <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
+            
+              <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
   
   <div class="flex-1 space-y-2 md:space-y-4">
     <div class="flex">
@@ -711,8 +719,8 @@
 </div>
 
 
-          
-            <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
+            
+              <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
   
   <div class="flex-1 space-y-2 md:space-y-4">
     <div class="flex">
@@ -793,8 +801,8 @@
 </div>
 
 
-          
-            <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
+            
+              <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
   
   <div class="flex-1 space-y-2 md:space-y-4">
     <div class="flex">
@@ -877,13 +885,13 @@
 </div>
 
 
-          
+            
+          </div>
         
       </section>
 
-      
       <footer class="space-y-4">
-        <div class="flex justify-center gap-6 text-lg">
+        <div class="flex justify-center gap-6 text-lg flex-wrap">
           
             
               
@@ -955,7 +963,7 @@
         </div>
 
         <div class="flex justify-center pt-2 border-t border-base-300">
-          <p>
+          <p class="text-center">
             Criado com
             <a class="link-custom" href="https://getzola.org/" target="_blank" rel="noopener noreferrer">Zola</a>, 
             <a class="link-custom" href="https://alpinejs.dev/" target="_blank" rel="noopener noreferrer">AlpineJS</a>, 
