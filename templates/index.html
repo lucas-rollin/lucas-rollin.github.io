@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+{% block content %}
+  <div class="h-screen flex flex-col md:flex-row">
+    <header x-data="navbar"
+            class="relative md:fixed md:overflow-y-auto top-0 left-0 h-screen w-full md:w-(--header-width) flex flex-col justify-start tall:justify-center gap-4 md:gap-20 text-right text-base-100 p-8 lg:p-16 bg-linear-to-b from-primary to-secondary">
+      <div>
+        <div class="flex justify-center md:justify-end">
+          <img id="avatar"
+               src="{{ get_url(path='/img/headshot.png') }}"
+               alt="avatar logo"
+               class="w-32 bg-base-200 rounded-full mb-2">
+        </div>
+        <div class="text-center md:text-right">
+          <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl pb-2.5">{{ section.extra.name }}</h1>
+          <p>{{ section.extra.tagline }}</p>
+        </div>
+        {# Meta information #}
+        <div class="text-center md:text-right text-base-100/80 text-sm pt-2 sm:pt-6 space-y-1">
+          <p class="flex items-center justify-center md:justify-end gap-1.5">{{ section.extra.location }}</p>
+          <p class="flex items-center justify-center md:justify-end gap-1.5">
+            {% for lang_entry in section.extra.languages %}
+              {{ lang_entry.name }} ({{ lang_entry.level }}){% if not loop.last %} · {% endif %}
+            {% endfor %}
+          </p>
+          <p class="flex items-center justify-center md:justify-end gap-1.5 font-semibold">
+            {{ section.extra.graduation_title }}
+          </p>
+        </div>
+      </div>
+      {% include "partials/navbar.html" %}
+      <div>
+        <ul id="social-icons"
+            class="flex justify-center align-center md:justify-end gap-4">
+          {% for social in section.extra.social %}
+            {{ macros::social_icon(platform=social.platform, url=social.url) }}
+          {% endfor %}
+        </ul>
+      </div>
+    </header>
+    <div class="ml-0 md:ml-(--header-width) bg-base-100">
+      <main x-data="portfolioModal"
+            class="max-w-5xl mx-auto text-[1.1rem] text-base-content px-4 md:px-8 lg:px-16 py-4 md:py-8 mt-0 md:mt-8 lg:py-16 space-y-8 md:space-y-16">
+        <section id="about" class="relative md:static space-y-4">
+          <h2 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
+            {{ trans(key="about", lang=lang) }}
+          </h2>
+          <div class="p-4">
+            {% if section.extra.about_paragraphs %}
+              <div class="space-y-4">
+                {% for paragraph in section.extra.about_paragraphs %}
+                  <p>{{ paragraph | safe }}</p>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        </section>
+        <section id="experience" class="relative md:static space-y-2 md:space-y-4">
+          <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
+            {{ trans(key="experience", lang=lang) }}
+          </h3>
+          {% if section.extra.experience %}
+            <div class="space-y-4 md:space-y-2">
+              {% for exp in section.extra.experience %}
+                {{ macros::experience_block(
+                  url=exp.url,
+                  date=exp.date,
+                  title=exp.title,
+                  description=exp.description,
+                  tags=exp.tags
+                ) }}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </section>
+        <section id="projects" class="relative md:static space-y-2 md:space-y-4">
+          <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
+            {{ trans(key="projects", lang=lang) }}
+          </h3>
+          {% if section.extra.projects %}
+            <div class="space-y-4 md:space-y-2">
+              {% for project in section.extra.projects %}
+                {{ macros::project_block(
+                  title       = project.title,
+                  description = project.description,
+                  url         = project.url,
+                  tags        = project.tags,
+                  media       = project.media
+                ) }}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </section>
+        <footer class="space-y-4">
+          <div class="flex justify-center gap-6 text-lg flex-wrap">
+            {% if section.extra.footer_links %}
+              {% for link in section.extra.footer_links %}
+                {{ macros::link_with_arrow(
+                  url=link.url,
+                  text=link.text,
+                  external=link.external | default(value=true),
+                  arrow_direction=link.arrow_direction | default(value="right"),
+                  underline=true
+                ) }}
+              {% endfor %}
+            {% endif %}
+          </div>
+          <div class="flex justify-center pt-2 border-t border-base-300">
+            <p class="text-center">
+              {{ trans(key="built_with", lang=lang) }}
+              <a class="link-custom"
+                 href="https://getzola.org/"
+                 target="_blank"
+                 rel="noopener noreferrer">Zola</a>,
+              <a class="link-custom"
+                 href="https://alpinejs.dev/"
+                 target="_blank"
+                 rel="noopener noreferrer">AlpineJS</a>,
+              <a class="link-custom"
+                 href="https://tailwindcss.com/"
+                 target="_blank"
+                 rel="noopener noreferrer">Tailwind CSS</a>
+              {{ trans(key="and", lang=lang) }}
+              <a class="link-custom"
+                 href="https://daisyui.com/"
+                 target="_blank"
+                 rel="noopener noreferrer">DaisyUI</a>.
+            </p>
+          </div>
+        </footer>
+        {% include "partials/modal.html" %}
+      </main>
+    </div>
+  </div>
+{% endblock content %}

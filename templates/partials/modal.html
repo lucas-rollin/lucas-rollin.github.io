@@ -1,0 +1,119 @@
+{#
+  partials/modal.html
+  Requires the parent to have x-data="portfolioModal".
+  Opened via openAt(index, mediaArray, title) on the Alpine component.
+#}
+<dialog id="portfolio-modal"
+        class="modal"
+        @keydown.window="handleKeydown($event)">
+  <div class="modal-box w-11/12 max-w-4xl p-0 overflow-hidden bg-base-100">
+    {# ── Header ── #}
+    <div class="flex items-center justify-between px-4 py-3 border-b border-base-300">
+      <h3 class="font-semibold text-base truncate pr-4" x-text="title"></h3>
+      <button type="button"
+              class="btn btn-sm btn-ghost btn-circle shrink-0"
+              aria-label="Close modal"
+              @click="close()">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="w-5 h-5"
+             viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    {# ── Media area ── #}
+    <div class="relative flex items-center justify-center bg-base-300 min-h-48 select-none">
+      {# Media – re-rendered on index change via x-key #}
+      <template x-if="current">
+        <div class="w-full" :key="index">
+          {# Video #}
+          <template x-if="current.type === 'video'">
+            <video :src="current.src"
+                   controls
+                   playsinline
+                   class="w-full max-h-[70vh] object-contain"
+                   :aria-label="current.alt || title">
+            </video>
+          </template>
+          {# Image #}
+          <template x-if="current.type !== 'video'">
+            <img :src="current.src"
+                 :alt="current.alt || title"
+                 class="w-full max-h-[70vh] object-contain" />
+          </template>
+        </div>
+      </template>
+      {# Prev arrow #}
+      <template x-if="hasMany">
+        <button type="button"
+                class="absolute left-2 btn btn-circle btn-sm bg-black/50 hover:bg-black/75 border-none text-white"
+                aria-label="Previous media"
+                @click="prev()">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               class="w-4 h-4"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2.5"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               aria-hidden="true">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+      </template>
+      {# Next arrow #}
+      <template x-if="hasMany">
+        <button type="button"
+                class="absolute right-2 btn btn-circle btn-sm bg-black/50 hover:bg-black/75 border-none text-white"
+                aria-label="Next media"
+                @click="next()">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               class="w-4 h-4"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2.5"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               aria-hidden="true">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      </template>
+      {# Counter badge #}
+      <template x-if="hasMany">
+        <span class="absolute bottom-2 right-3 badge badge-neutral badge-sm opacity-80 pointer-events-none"
+              x-text="`${index + 1} / ${items.length}`"></span>
+      </template>
+    </div>
+    {# ── Dot navigation ── #}
+    <template x-if="hasMany">
+      <div class="flex justify-center gap-1.5 pt-3 px-4 flex-wrap">
+        <template x-for="(item, i) in items" :key="i">
+          <button type="button"
+                  class="w-2 h-2 rounded-full transition-colors duration-200 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  :class="i === index ? 'bg-primary' : 'bg-base-300 hover:bg-base-content/40'"
+                  :aria-label="`Go to media ${i + 1}`"
+                  :aria-current="i === index ? 'true' : 'false'"
+                  @click="goTo(i)"></button>
+        </template>
+      </div>
+    </template>
+    {# ── Alt / caption ── #}
+    <template x-if="current && current.alt">
+      <p class="px-4 py-3 text-sm text-base-content/70 text-center"
+         x-text="current.alt"></p>
+    </template>
+  </div>
+  {# Backdrop click closes #}
+  <form method="dialog" class="modal-backdrop">
+    <button type="button" @click="close()">close</button>
+  </form>
+</dialog>

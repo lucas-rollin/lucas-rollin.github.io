@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+{% block content %}
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="mb-8">
+      <a href="/" class="inline-flex items-center gap-1 group/link w-fit">
+        <svg class="inline-block w-5 h-5 translate-y-px shrink-0 transition-transform duration-300 ease-in-out group-hover/link:-translate-x-1.5"
+             xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             aria-hidden="true">
+          <path d="m12 19-7-7 7-7"></path>
+          <path d="M19 12H5"></path>
+        </svg>
+        <span class="text-lg underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out group-hover/link:decoration-info">
+          {{ page.extra.name }}
+        </span>
+      </a>
+      <h1 class="text-3xl font-bold mt-2 text-base-content">{{ page.title }}</h1>
+    </div>
+    <div class="overflow-x-auto">
+      <!-- Table View -->
+      <div class="hidden sm:block">
+        <div class="overflow-x-auto rounded-box border border-base-200">
+          <table class="table table-zebra w-full lg:text-lg">
+            <thead class="bg-base-200/60 text-base-content/80 backdrop-blur-sm lg:text-lg">
+              <tr>
+                <th class="w-16">{{ trans(key="year", lang=lang) }}</th>
+                <th>{{ trans(key="certificate", lang=lang) }}</th>
+                <th class="hidden md:table-cell">{{ trans(key="institution", lang=lang) }}</th>
+                <th class="hidden lg:table-cell">{{ trans(key="competences", lang=lang) }}</th>
+                <th class="hidden sm:table-cell">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for cert in page.extra.certificates %}
+                <tr class="hover:bg-base-200/40 transition-colors duration-200">
+                  <td class="font-mono text-base-content/70 font-medium">{{ cert.year }}</td>
+                  <td class="font-semibold text-base-content">
+                    <span class="hidden sm:inline">{{ cert.title }}</span>
+                    <a href="{{ cert.link | safe }}"
+                       class="sm:hidden group gap-1 inline normal-case hover:text-primary transition-colors duration-300 ease-in-out"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                      <span>{{ cert.title }}</span>
+                      <svg class="inline-block w-4 h-4 translate-y-px shrink-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 24 24"
+                           fill="none"
+                           stroke="currentColor"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           aria-hidden="true">
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </a>
+                  </td>
+                  <td class="hidden md:table-cell text-base-content/90">{{ cert.institution }}</td>
+                  <td class="hidden lg:table-cell">
+                    <div class="flex flex-wrap gap-1.5">
+                      {% for skill in cert.competences %}
+                        <span class="badge badge-primary badge-sm font-medium">{{ skill }}</span>
+                      {% endfor %}
+                    </div>
+                  </td>
+                  <td class="hidden sm:table-cell">
+                    <a href="{{ cert.link | safe }}"
+                       class="group gap-1 inline-flex items-center normal-case font-medium hover:text-primary transition-colors duration-300 ease-in-out"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                      <span>{{ cert.display_link | default(value="View") }}</span>
+                      <svg class="inline-block w-4 h-4 shrink-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 24 24"
+                           fill="none"
+                           stroke="currentColor"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           aria-hidden="true">
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Card View (Mobile Optimized) -->
+      <div class="block sm:hidden">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {% for cert in page.extra.certificates %}
+            <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-base-200 hover:border-primary/20">
+              <div class="card-body p-5">
+                <div class="flex justify-between items-start gap-2">
+                  <span class="badge badge-neutral badge-sm">{{ cert.year }}</span>
+                  <a href="{{ cert.link | safe }}"
+                     class="btn btn-xs btn-ghost gap-1"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    <span>{{ cert.display_link | default(value="Visit") }}</span>
+                    <svg class="w-3 h-3"
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </a>
+                </div>
+                <h3 class="card-title text-lg font-semibold mt-1">
+                  <a href="{{ cert.link | safe }}"
+                     class="hover:text-primary transition-colors"
+                     target="_blank"
+                     rel="noopener noreferrer">{{ cert.title }}</a>
+                </h3>
+                <p class="text-sm text-base-content/90 flex items-center gap-1">
+                  <svg class="w-4 h-4 shrink-0"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="none"
+                       viewBox="0 0 24 24"
+                       stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                  {{ cert.institution }}
+                </p>
+                {% if cert.competences %}
+                  <div class="flex flex-wrap gap-1.5 mt-2">
+                    {% for skill in cert.competences %}
+                      <span class="badge badge-primary badge-sm">{{ skill }}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

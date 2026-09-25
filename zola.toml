@@ -1,0 +1,51 @@
+# The URL the site will be built for
+base_url = "https://lucas-rollin.github.io/"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+# default_language = "en"
+
+[languages.en]
+title = "My Portfolio"
+
+[languages.en.translations]
+about = "About"
+experience = "Experience"
+projects = "Projects"
+built_with = "Built with"
+and = "and"
+year = "Year"
+certificate = "Certificate"
+institution = "Institution"
+competences = "Competences"
+
+[languages.pt]
+title = "Meu portfólio"
+
+[languages.pt.translations]
+about = "Sobre"
+experience = "Experiência"
+projects = "Projetos"
+built_with = "Criado com"
+and = "e"
+year = "Ano"
+certificate = "Certificado"
+institution = "Instituição"
+competences = "Competências"
+
+[extra]
+# Put all your custom variables here
+nav_links = [
+  { href = "about",      label = "about" },
+  { href = "experience", label = "experience" },
+  { href = "projects",   label = "projects" },
+]

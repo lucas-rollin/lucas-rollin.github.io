@@ -1,0 +1,19 @@
+<nav x-data="navbar" class="hidden md:block text-lg">
+  <ul class="list-none space-y-1">
+    {% for link in config.extra.nav_links %}
+      <li>
+        <a href="#{{ link.href }}"
+           :class="activeSection === '{{ link.href }}'
+          ? 'text-base-100 font-medium'
+          : 'text-base-300/80 hover:text-base-100'"
+           class="inline-flex items-center transition-colors duration-150 group">
+          <span>{{ trans(key=link.label, lang=lang) }}</span>
+          <span :class="activeSection === '{{ link.href }}'
+            ? 'w-16 bg-base-100'
+            : 'w-8 bg-base-300/80 group-hover:w-16 group-hover:bg-base-100'"
+                class="inline-block relative top-px h-px ml-2 transition-[width] duration-200 ease-in-out"></span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
