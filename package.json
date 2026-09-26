@@ -1,12 +1,19 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.3.3",
-    "daisyui": "^5.7.46",
-    "tailwindcss": "^4.3.3"
+    "alpinejs": "^3.17.4"
   },
   "scripts": {
     "build:css": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/output.css --minify",
-    "build:site": "npm run build:css && zola build",
-    "watch:css": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/output.css --watch"
+    "build:js": "esbuild ./static/js/entry.js --bundle --minify --outfile=static/js/data.min.js",
+    "build:site": "npm run build:css && npm run build:js && zola build",
+    "watch:css": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/output.css --watch",
+    "watch:js": "esbuild ./static/js/entry.js --bundle --outfile=static/js/data.min.js --watch",
+    "watch": "npm run watch:css & npm run watch:js & zola serve"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "daisyui": "^5.7.46",
+    "esbuild": "^0.28.2",
+    "tailwindcss": "^4.3.3"
   }
 }

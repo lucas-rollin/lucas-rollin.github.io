@@ -88,10 +88,7 @@
     })();
     </script>
     <link rel="stylesheet" href="{{ get_url(path='css/output.css') }}">
-    <script src="{{ get_url(path='js/theme.js') }}"></script>
-    <script src="{{ get_url(path='js/navbar.js') }}"></script>
-    <script src="{{ get_url(path='js/modal.js') }}"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="{{ get_url(path='js/data.min.js') }}"></script>
   </head>
   <body class="font-sans min-h-screen leading-relaxed">
     <div class="absolute flex align-center justify-end gap-1 z-20 right-0 p-0.5 sm:p-2 md:p-3">
@@ -136,7 +133,7 @@
           </a>
         </li>
       </ul>
-      <div x-data="themeToggle()">
+      <div x-data="theme()">
         <label class="swap swap-rotate">
           <input type="checkbox"
                  class="theme-controller"
