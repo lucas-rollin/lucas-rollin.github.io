@@ -25,7 +25,7 @@
   <div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
     <div class="date text-base font-semibold min-w-44 uppercase">{{ date }}</div>
     <div class="flex-1 space-y-2 md:space-y-4">
-      <h4 class="text-lg font-bold">{{<ui.link_with_arrow url={url} text={title} absolute={true} />}}</h4>
+      <h4 class="text-lg font-bold">{{ <ui.link_with_arrow url={url} text={title} absolute={true} /> }}</h4>
       <p>{{ description }}</p>
       <ul class="flex flex-wrap gap-2 text-[0.9rem]">
         {% for tag in tags %}
@@ -43,7 +43,7 @@
     <div class="flex-1 space-y-2 md:space-y-4">
       <div class="flex">
         {% if url %}
-          <h4 class="text-lg font-bold">{{<ui.link_with_arrow url={url} text={title} absolute={true} />}}</h4>
+          <h4 class="text-lg font-bold">{{ <ui.link_with_arrow url={url} text={title} absolute={true} /> }}</h4>
         {% else %}
           <h4 class="text-lg font-bold">{{ title }}</h4>
         {% endif %}

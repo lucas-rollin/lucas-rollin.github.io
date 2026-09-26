@@ -2,7 +2,7 @@ export default () => ({
   open: false,
   items: [],
   index: 0,
-  title: '',
+  title: "",
 
   get current() {
     return this.items[this.index] ?? null;
@@ -18,21 +18,21 @@ export default () => ({
     this.title = title;
     this.open = true;
     this.$nextTick(() => {
-      document.getElementById('portfolio-modal')?.showModal();
+      document.getElementById("portfolio-modal")?.showModal();
     });
   },
 
   close() {
     this.open = false;
-    document.getElementById('portfolio-modal')?.close();
+    document.getElementById("portfolio-modal")?.close();
     // Pause any playing video when modal closes
-    const video = document.querySelector('#portfolio-modal video');
+    const video = document.querySelector("#portfolio-modal video");
     if (video) video.pause();
   },
 
   goTo(i) {
     // Pause current video before switching
-    const video = document.querySelector('#portfolio-modal video');
+    const video = document.querySelector("#portfolio-modal video");
     if (video) video.pause();
     this.index = i;
   },
@@ -47,8 +47,8 @@ export default () => ({
 
   handleKeydown(e) {
     if (!this.open) return;
-    if (e.key === 'ArrowLeft') this.prev();
-    if (e.key === 'ArrowRight') this.next();
-    if (e.key === 'Escape') this.close();
+    if (e.key === "ArrowLeft") this.prev();
+    if (e.key === "ArrowRight") this.next();
+    if (e.key === "Escape") this.close();
   },
 });

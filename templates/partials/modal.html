@@ -39,11 +39,13 @@
                    playsinline
                    class="w-full max-h-[70vh] object-contain"
                    :aria-label="current.alt || title">
+              <track kind="captions">
             </video>
           </template>
           {# Image #}
           <template x-if="current.type !== 'video'">
             <img :src="current.src"
+                 alt=""
                  :alt="current.alt || title"
                  class="w-full max-h-[70vh] object-contain" />
           </template>

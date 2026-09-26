@@ -4,9 +4,13 @@ export default () => ({
   init() {
     this.highlightActiveLink();
 
-    window.addEventListener("scroll", () => {
-      this.highlightActiveLink();
-    }, { passive: true });
+    window.addEventListener(
+      "scroll",
+      () => {
+        this.highlightActiveLink();
+      },
+      { passive: true },
+    );
 
     window.addEventListener("hashchange", () => {
       const id = window.location.hash.replace("#", "");
@@ -22,7 +26,10 @@ export default () => ({
     sections.forEach((section) => {
       const sectionTop = section.offsetTop - offset;
       const sectionHeight = section.offsetHeight;
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      if (
+        scrollPosition >= sectionTop &&
+        scrollPosition < sectionTop + sectionHeight
+      ) {
         this.activeSection = section.id;
       }
     });
