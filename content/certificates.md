@@ -1,5 +1,5 @@
 +++
-title = "Certificados"
+title = "Certificates"
 template = "certificates.html"
 
 [extra]

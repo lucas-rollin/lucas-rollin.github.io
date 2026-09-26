@@ -111,7 +111,7 @@ wheels = [
 [[package]]
 name = "lucas-rollin-github-io"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "djlint" },
 ]
