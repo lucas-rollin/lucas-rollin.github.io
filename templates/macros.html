@@ -1,4 +1,4 @@
-{% macro link_with_arrow(url, text, arrow_direction="top_right", underline=false, absolute=false) %}
+{% component ui.link_with_arrow(url, text, arrow_direction="top_right", underline=false, absolute=false) %}
   <a href="{{ url }}"
      target="_blank"
      class="inline group/link w-fit {% if absolute %} md:after:absolute md:after:inset-0 {% endif %}">
@@ -20,12 +20,12 @@
     {% endif %}
     </svg>
   </a>
-{% endmacro %}
-{% macro experience_block(url, date, title, description, tags) %}
+{% endcomponent %}
+{% component ui.experience_block(url, date, title, description, tags) %}
   <div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
     <div class="date text-base font-semibold min-w-44 uppercase">{{ date }}</div>
     <div class="flex-1 space-y-2 md:space-y-4">
-      <h4 class="text-lg font-bold">{{ self::link_with_arrow(url=url, text=title, absolute=true) }}</h4>
+      <h4 class="text-lg font-bold">{{<ui.link_with_arrow url={url} text={title} absolute={true} />}}</h4>
       <p>{{ description }}</p>
       <ul class="flex flex-wrap gap-2 text-[0.9rem]">
         {% for tag in tags %}
@@ -34,8 +34,8 @@
       </ul>
     </div>
   </div>
-{% endmacro %}
-{% macro project_block(title, description, url, tags, media) %}
+{% endcomponent %}
+{% component ui.project_block(title, description, url, tags, media) %}
   {%- set has_media = media | length > 0 -%}
   {%- set thumb = media | first -%}
   {%- set media_json = media | json_encode -%}
@@ -43,7 +43,7 @@
     <div class="flex-1 space-y-2 md:space-y-4">
       <div class="flex">
         {% if url %}
-          <h4 class="text-lg font-bold">{{ self::link_with_arrow(url=url, text=title, absolute=true) }}</h4>
+          <h4 class="text-lg font-bold">{{<ui.link_with_arrow url={url} text={title} absolute={true} />}}</h4>
         {% else %}
           <h4 class="text-lg font-bold">{{ title }}</h4>
         {% endif %}
@@ -105,8 +105,8 @@
       </button>
     {% endif %}
   </div>
-{% endmacro %}
-{% macro social_icon(platform, url) %}
+{% endcomponent %}
+{% component ui.social_icon(platform, url) %}
   <li>
     <a href="{{ url }}"
        target="_blank"
@@ -125,4 +125,4 @@
       </svg>
     </a>
   </li>
-{% endmacro %}
+{% endcomponent %}

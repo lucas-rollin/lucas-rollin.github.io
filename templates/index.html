@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros.html" as macros %}
 {% block content %}
   <div class="h-screen flex flex-col md:flex-row">
     <header x-data="navbar"
@@ -33,7 +32,7 @@
         <ul id="social-icons"
             class="flex justify-center align-center md:justify-end gap-4">
           {% for social in section.extra.social %}
-            {{ macros::social_icon(platform=social.platform, url=social.url) }}
+            {{<ui.social_icon platform={social.platform} url={social.url} />}}
           {% endfor %}
         </ul>
       </div>
@@ -62,13 +61,13 @@
           {% if section.extra.experience %}
             <div class="space-y-4 md:space-y-2">
               {% for exp in section.extra.experience %}
-                {{ macros::experience_block(
-                  url=exp.url,
-                  date=exp.date,
-                  title=exp.title,
-                  description=exp.description,
-                  tags=exp.tags
-                ) }}
+                {{<ui.experience_block
+                  url={exp.url}
+                  date={exp.date}
+                  title={exp.title}
+                  description={exp.description}
+                  tags={exp.tags}
+                />}}
               {% endfor %}
             </div>
           {% endif %}
@@ -80,13 +79,13 @@
           {% if section.extra.projects %}
             <div class="space-y-4 md:space-y-2">
               {% for project in section.extra.projects %}
-                {{ macros::project_block(
-                  title       = project.title,
-                  description = project.description,
-                  url         = project.url,
-                  tags        = project.tags,
-                  media       = project.media
-                ) }}
+                {{<ui.project_block
+                  title={project.title}
+                  description={project.description}
+                  url={project.url}
+                  tags={project.tags}
+                  media={project.media}
+                />}}
               {% endfor %}
             </div>
           {% endif %}
@@ -95,13 +94,12 @@
           <div class="flex justify-center gap-6 text-lg flex-wrap">
             {% if section.extra.footer_links %}
               {% for link in section.extra.footer_links %}
-                {{ macros::link_with_arrow(
-                  url=link.url,
-                  text=link.text,
-                  external=link.external | default(value=true),
-                  arrow_direction=link.arrow_direction | default(value="right"),
-                  underline=true
-                ) }}
+                {{<ui.link_with_arrow
+                  url={link.url}
+                  text={link.text}
+                  arrow_direction={link.arrow_direction or "right"}
+                  underline={true}
+                />}}
               {% endfor %}
             {% endif %}
           </div>
