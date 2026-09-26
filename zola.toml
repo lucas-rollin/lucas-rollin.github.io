@@ -7,12 +7,12 @@ compile_sass = false
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+default_language = "en"
+
 [markdown]
 
 [markdown.highlighting]
 theme = "catppuccin-mocha"
-
-# default_language = "en"
 
 [languages.en]
 title = "My Portfolio"
