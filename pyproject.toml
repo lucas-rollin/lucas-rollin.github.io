@@ -2,21 +2,13 @@
 name = "lucas-rollin-github-io"
 version = "0.1.0"
 description = "Portfolio"
-readme = "README.md"
-authors = [
-    { name = "Lucas Rollin Ferreira", email = "lucasrollinferreira@gmail.com" }
-]
 requires-python = ">=3.14"
 dependencies = [
     "djlint>=1.46.2",
 ]
 
-[project.scripts]
-lucas-rollin-github-io = "lucas_rollin_github_io:main"
-
-[build-system]
-requires = ["uv_build>=0.12.17,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
 
 [tool.djlint]
 profile = "tera"
