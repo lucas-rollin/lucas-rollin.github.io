@@ -66,6 +66,16 @@ tags = ["MS Project", "Advanced Excel", "Sienge ERP", "AutoCAD", "Quality Manage
 
 # Projects section
 [[extra.projects]]
+title = "django-htmx-nav"
+description = " A lightweight helper library for Django + HTMX that keeps navigation UI synchronized with the URL, preventing stale sidebars, breadcrumbs, titles, and other surrounding elements."
+url = "https://lucas-rollin.github.io/django-htmx-nav/"
+tags = ["Django | Python", "HTMX"]
+[[extra.projects.media]]
+type = "image"
+src = "/img/django-htmx-nav.png"
+alt = "Social preview for django-htmx-nav, a Python library for server-driven navigation for HTMX in Django. Includes a code snippet and installation command."
+
+[[extra.projects]]
 title = "Costplan"
 description = "Web application for civil engineering project cost estimation, enabling the creation of Unit Price Spreadsheets (UPS) based on predefined cost compositions and a structured input database."
 url = ""
