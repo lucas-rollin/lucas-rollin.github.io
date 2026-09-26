@@ -68,13 +68,14 @@ tags = ["MS Project", "Excel Avançado", "Sienge ERP", "AutoCAD", "Gestão da Qu
 # Seção Projetos
 [[extra.projects]]
 title = "django-htmx-nav"
-description = " Uma biblioteca auxiliar leve para Django + HTMX que mantém a interface de navegação sincronizada com a URL, evitando barras laterais, migalhas de pão (breadcrumbs), títulos e outros elementos ao redor desatualizados."
+description = "Uma biblioteca de navegação para Django + HTMX que permite atualizações parciais declarativas e orientadas pelo servidor, com um benchmark interativo comparando 8 abordagens arquiteturais e um guia completo sobre padrões de navegação com HTMX."
 url = "https://lucas-rollin.github.io/django-htmx-nav/"
-tags = ["Django | Python", "HTMX"]
+tags = ["Django | Python", "HTMX", "AlpineJS", "ECharts", "CI/CD"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/django-htmx-nav.png"
-alt = "Prévia social para django-htmx-nav, uma biblioteca Python para navegação orientada ao servidor para HTMX em Django. Inclui um trecho de código e comando de instalação."
+alt = "Prévia social do django-htmx-nav, destacando uma biblioteca Python para navegação orientada ao servidor com HTMX em Django, acompanhada de trecho de código e comando de instalação."
+caption = "Biblioteca Python para navegação fluida orientada ao servidor com Django e HTMX"
 
 [[extra.projects]]
 title = "Costplan"
@@ -84,7 +85,8 @@ tags = ["Django | Python", "JavaScript", "SQL", "HTML", "SCSS", "Orçamento"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/costplan.png"
-alt = "Visualização do Costplan"
+alt = "Interface da aplicação Costplan exibindo planilhas de preços unitários e tabelas de custos de construção."
+caption = "Visualização de planilhas de preços unitários no Costplan"
 
 [[extra.projects]]
 title = "Hardplan"
@@ -94,7 +96,8 @@ tags = ["Flask | Python", "SQL", "JavaScript", "Planejamento"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/hardplan.jpg"
-alt = "Projeto Hardplan — Página de Cronograma em Linha de Balanço."
+alt = "Tela do aplicativo Hardplan na visualização de cronograma por Linha de Balanço, mostrando o planejamento de um edifício de 10 pavimentos da estrutura aos acabamentos."
+caption = "Visualização de cronograma por Linha de Balanço"
 
 [[extra.projects]]
 title = "Hardplan ERP"
@@ -104,7 +107,8 @@ tags = ["SQL", "Modelagem de Dados", "Construção Civil"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/ERP.png"
-alt = "Projeto Hardplan ERP — Diagrama de Relacionamento entre Entidades."
+alt = "Diagrama de Entidade-Relacionamento em Mermaid simplificada para o banco de dados do Hardplan ERP."
+caption = "Diagrama de Entidade-Relacionamento do banco de dados"
 
 [[extra.projects]]
 title = "Budgetpy"
@@ -114,5 +118,6 @@ tags = ["Python", "CLI", "SINAPI", "Orçamento"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/budgetpy.png"
-alt = "Projeto Budgetpy — Linha de Comandos com Menu e Cálculo Orçamentário."
+alt = "Interface de linha de comando do Budgetpy exibindo o menu interativo e o resultado de um cálculo de custos."
+caption = "Interface CLI para cálculo de custos e relatórios"
 +++

@@ -2,3 +2,4 @@ output.css
 public/
 node_modules/
 data.min.js
+*.tmp

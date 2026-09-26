@@ -67,13 +67,14 @@ tags = ["MS Project", "Advanced Excel", "Sienge ERP", "AutoCAD", "Quality Manage
 # Projects section
 [[extra.projects]]
 title = "django-htmx-nav"
-description = " A lightweight helper library for Django + HTMX that keeps navigation UI synchronized with the URL, preventing stale sidebars, breadcrumbs, titles, and other surrounding elements."
+description = "A Django + HTMX navigation library for declarative, server-driven partial updates, with an interactive benchmark comparing 8 architectural approaches and a comprehensive guide to HTMX navigation patterns."
 url = "https://lucas-rollin.github.io/django-htmx-nav/"
-tags = ["Django | Python", "HTMX"]
+tags = ["Django | Python", "HTMX", "AlpineJS", "ECharts", "CI/CD"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/django-htmx-nav.png"
-alt = "Social preview for django-htmx-nav, a Python library for server-driven navigation for HTMX in Django. Includes a code snippet and installation command."
+alt = "Social preview for django-htmx-nav, showing a Python library for server-driven navigation in HTMX with Django, complete with a code snippet and installation command."
+caption = "A Python library for seamless server-driven navigation with Django and HTMX"
 
 [[extra.projects]]
 title = "Costplan"
@@ -83,7 +84,8 @@ tags = ["Django | Python", "JavaScript", "SQL", "HTML", "SCSS", "Cost Estimation
 [[extra.projects.media]]
 type = "image"
 src = "/img/costplan.png"
-alt = "Costplan preview"
+alt = "Costplan application interface showcasing unit price spreadsheets and construction cost tables."
+caption = "Unit price spreadsheet management in Costplan"
 
 [[extra.projects]]
 title = "Hardplan"
@@ -93,7 +95,8 @@ tags = ["Flask | Python", "SQL", "JavaScript", "Scheduling"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/hardplan.jpg"
-alt = "Hardplan project — Line of Balance scheduling view."
+alt = "Hardplan app interface in the Line of Balance scheduling view, illustrating a 10-story building timeline from structure to finishing."
+caption = "Line of Balance scheduling view"
 
 [[extra.projects]]
 title = "Hardplan ERP"
@@ -103,7 +106,9 @@ tags = ["SQL", "Data Modeling", "Construction"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/ERP.png"
-alt = "Hardplan ERP — Entity Relationship Diagram."
+alt = "Simplified Mermaid Entity Relationship Diagram showcasing the relational database structure for Hardplan ERP."
+caption = "Entity Relationship Diagram of the database"
+
 
 [[extra.projects]]
 title = "Budgetpy"
@@ -113,5 +118,6 @@ tags = ["Python", "CLI", "SINAPI", "Cost Estimation"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/budgetpy.png"
-alt = "Budgetpy — CLI interface with menu and cost calculation."
+alt = "Budgetpy command-line interface showing the interactive menu and itemized cost calculation results."
+caption = "CLI interface for construction cost calculation"
 +++
