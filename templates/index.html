@@ -71,6 +71,24 @@
             </div>
           {% endif %}
         </section>
+        <section id="education" class="relative md:static space-y-2 md:space-y-4">
+          <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
+            {{ trans(key="education", lang=lang) }}
+          </h3>
+          {% if section.extra.education %}
+            <div class="space-y-4 md:space-y-2">
+              {% for ed in section.extra.education %}
+                {{ <ui.education_block
+                  url={ed.url}
+                  date={ed.date}
+                  institution={ed.institution}
+                  degree={ed.degree}
+                  description={ed.description}
+                  /> }}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </section>
         <section id="projects" class="relative md:static space-y-2 md:space-y-4">
           <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
             {{ trans(key="projects", lang=lang) }}

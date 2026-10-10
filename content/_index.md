@@ -30,7 +30,7 @@ footer_links = [
 
 # About section
 about_paragraphs = [
-  "I'm a Civil Engineer graduated from <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> (GPA 8.8/10.0) with a specialization in Full-Stack Web Development and Data Analysis. I build web applications with <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">AlpineJS</span> and <span class=\"tech\">Tailwind CSS</span>, automate workflows with <span class=\"tech\">Python</span> and <span class=\"tech\">Google Apps Script</span>, and design strategic dashboards with <span class=\"tech\">Power BI</span>.",
+  "I'm a Civil Engineer graduated from <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> (GPA 8.8/10.0) working across software development, data analysis, and engineering. I build web applications with <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">AlpineJS</span> and <span class=\"tech\">Tailwind CSS</span>, automate workflows with <span class=\"tech\">Python</span> and <span class=\"tech\">Google Apps Script</span>, and design strategic dashboards with <span class=\"tech\">Power BI</span>. Currently, I am pursuing a degree in Systems Analysis and Development at <a href=\"https://www.uninter.com/\" target=\"_blank\" class=\"link-custom\">UNINTER</a> with a full academic scholarship based on national exam performance.",
   "I currently work as a Civil Engineer at <a href=\"https://www.aresc.sc.gov.br/\" target=\"_blank\" class=\"link-custom\">ARESC</a>, where I develop internal web applications, automate data collection and processing routines, cutting operational time by 40%, and build dashboards for regulatory indicator monitoring.",
   "Throughout my career I have also worked at <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a> in market intelligence and geospatial analysis, and at <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, managing planning and control across 4 vertical construction projects (~12,000 m²). I am a native Portuguese speaker, fluent in English (C2), and hold all five Harvard CS50 certifications: <a href=\"/certificates/\" class=\"link-custom\">CS50x, CS50P, CS50 SQL, CS50W and CS50AI</a>."
 ]
@@ -63,6 +63,21 @@ date = "APR 2022 — JUL 2023"
 title = "Planning & Civil Engineering Intern · D'Campos Construtora"
 description = "Monitored 4 vertical construction projects (~12,000 m²), controlling schedule, quality and quantities. Prepared physical schedules in MS Project, tracked materials via Sienge ERP, and developed quality manuals and service verification checklists (FVS) to standardize construction quality."
 tags = ["MS Project", "Advanced Excel", "Sienge ERP", "AutoCAD", "Quality Management"]
+
+# Education section
+[[extra.education]]
+institution = "UNINTER International University Center"
+url = "https://www.uninter.com/graduacao/a-distancia/tecnologia-em-analise-e-desenvolvimento-de-sistemas/"
+degree = "Technologist in Systems Analysis and Development"
+date = "2025 — 2028"
+description = "Full merit-based scholarship (100%) through national exam (ENEM) performance."
+
+[[extra.education]]
+institution = "Federal University of Santa Catarina (UFSC)"
+url = "https://ufsc.br/"
+degree = "B.Sc. in Civil Engineering"
+date = "2018 — 2024"
+description = "GPA: 8.8/10.0."
 
 # Projects section
 [[extra.projects]]
@@ -108,7 +123,6 @@ type = "image"
 src = "/img/ERP.png"
 alt = "Simplified Mermaid Entity Relationship Diagram showcasing the relational database structure for Hardplan ERP."
 caption = "Entity Relationship Diagram of the database"
-
 
 [[extra.projects]]
 title = "Budgetpy"
