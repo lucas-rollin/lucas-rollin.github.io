@@ -1,24 +1,36 @@
 {% component ui.link_with_arrow(url, text, arrow_direction="top_right", underline=false, absolute=false) %}
+  {% set words = text | split(pat=" ") %}
   <a href="{{ url }}"
      target="_blank"
      class="inline group/link w-fit {% if absolute %} md:after:absolute md:after:inset-0 {% endif %}">
-    <span class="{% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">{{ text }}</span><svg class="inline-block w-5 h-5 translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %}"
-     xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 24 24"
-     fill="none"
-     stroke="currentColor"
-     stroke-width="2"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     aria-hidden="true">
-    {% if arrow_direction == "top_right" %}
-      <path d="M7 7h10v10" />
-      <path d="M7 17 17 7" />
-    {% else %}
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
-    {% endif %}
-    </svg>
+    <span class="{% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
+      {% for word in words %}
+        {% if loop.last %}
+          <span class="inline-block whitespace-nowrap {% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
+            {{ word }}
+            <svg class="inline-block w-5 h-5 translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %}"
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 aria-hidden="true">
+              {% if arrow_direction == "top_right" %}
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              {% else %}
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              {% endif %}
+            </svg>
+          </span>
+        {% else %}
+          {{ word }}
+        {% endif %}
+      {% endfor %}
+    </span>
   </a>
 {% endcomponent %}
 {% component ui.experience_block(url, date, title, description, tags) %}
