@@ -5,7 +5,7 @@ template = "index.html"
 [extra]
 # Personal info
 name = "Lucas Rollin Ferreira"
-tagline = "Civil Engineer · Full-Stack Developer · Data Analyst"
+tagline = "Full-Stack Developer · Data Analyst · Civil Engineer"
 avatar = "/img/headshot.png"
 location = "Florianópolis, Santa Catarina, Brazil"
 graduation_title = "B.Sc. in Civil Engineering · UFSC"
