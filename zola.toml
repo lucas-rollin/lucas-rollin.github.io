@@ -20,6 +20,7 @@ title = "My Portfolio"
 [languages.en.translations]
 about = "About"
 experience = "Experience"
+education = "Education"
 projects = "Projects"
 built_with = "Built with"
 and = "and"
@@ -34,6 +35,7 @@ title = "Meu portfólio"
 [languages.pt.translations]
 about = "Sobre"
 experience = "Experiência"
+education = "Formação"
 projects = "Projetos"
 built_with = "Criado com"
 and = "e"
@@ -47,5 +49,6 @@ competences = "Competências"
 nav_links = [
   { href = "about",      label = "about" },
   { href = "experience", label = "experience" },
+  { href = "education",   label = "education" },
   { href = "projects",   label = "projects" },
 ]

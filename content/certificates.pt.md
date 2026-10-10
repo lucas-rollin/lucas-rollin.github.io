@@ -52,7 +52,7 @@ year = 2024
 title = "Graduação"
 institution = "UFSC"
 competences = ["Engenharia Civil"]
-link = "/pdf/degree.pdf"
+link = "/pdf/degree_civil_engineering.pdf"
 display_link = "diploma.pdf"
 
 [[extra.certificates]]
