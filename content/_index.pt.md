@@ -94,15 +94,15 @@ alt = "Prévia social do django-htmx-nav, destacando uma biblioteca Python para 
 caption = "Biblioteca Python para navegação fluida orientada ao servidor com Django e HTMX"
 
 [[extra.projects]]
-title = "BI da Conta Gráfica do Gás"
-description = "Painel em Power BI para acompanhamento mensal e apuração do IRPGT e do saldo da Conta Gráfica conforme a Resolução ARESC nº 73/2016. Iniciativa pioneira em transparência regulatória estadual que permite a previsão de atualizações tarifárias e assegura a modicidade tarifária no setor."
+title = "Dashboard da Conta Gráfica do Gás"
+description = "Desenvolvi um painel público em Power BI para a ARESC acompanhar o Índice de Reajuste do Preço do Gás e do Transporte (IRPGT) e o saldo da conta gráfica, conforme a Resolução nº 73/2016. Facilita o acesso público aos dados de atualização tarifária e amplia a transparência na regulação da distribuição de gás natural."
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
-tags = ["Power BI", "DAX", "Power Query", "Análise de Dados", "Regulação Pública"]
+tags = ["Power BI", "DAX", "Power Query", "Visualização de Dados", "Setor Público"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/conta-grafica.png"
-alt = "Interface do dashboard em Power BI exibindo o gráfico de evolução do IRPGT, tabela de apuração e indicadores chave."
-caption = "Painel de apuração mensal do IRPGT e acompanhamento do saldo da conta gráfica"
+alt = "Painel Power BI com a evolução do IRPGT, o saldo da conta gráfica e indicadores relacionados."
+caption = "Painel público de acompanhamento do IRPGT e do saldo da conta gráfica"
 
 [[extra.projects]]
 title = "Costplan"

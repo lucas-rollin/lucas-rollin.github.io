@@ -15,7 +15,7 @@ display_link = "lucas-rollin.github.io"
 
 [[extra.projects]]
 year = 2025
-title = "BI da Conta Gráfica do Gás"
+title = "Dashboard da Conta Gráfica do Gás"
 category = "ARESC"
 tags = ["Power BI", "DAX", "Power Query", "Análise de Dados", "Regulação Pública"]
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"

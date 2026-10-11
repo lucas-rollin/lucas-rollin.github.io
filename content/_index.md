@@ -93,15 +93,15 @@ alt = "Social preview for django-htmx-nav, showing a Python library for server-d
 caption = "A Python library for seamless server-driven navigation with Django and HTMX"
 
 [[extra.projects]]
-title = "Gas Regulatory Tracking Account BI"
-description = "Power BI dashboard for monthly tracking and calculation of the Gas & Transport Price Index (IRPGT) and Account Balance under ARESC Resolution 73/2016. A pioneering initiative in state-level regulatory transparency, enabling users to forecast tariff adjustments and ensuring fair, non-profit energy pricing."
+title = "Gas Tariff Regulatory Dashboard"
+description = "Developed a public Power BI dashboard for ARESC to track the Gas and Transport Price Adjustment Index (IRPGT) and the regulatory account balance under Resolution 73/2016. Improves public access to tariff adjustment data and transparency in natural gas distribution regulation."
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
-tags = ["Power BI", "DAX", "Power Query", "Data Analysis", "Public Regulation"]
+tags = ["Power BI", "DAX", "Power Query", "Data Visualization", "Public Regulation"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/conta-grafica.png"
-alt = "Power BI dashboard interface showing IRPGT evolution charts, account balance calculations, and key metrics."
-caption = "Monthly IRPGT calculation and account balance tracking interface"
+alt = "Power BI dashboard displaying IRPGT trends, regulatory account balance, and related indicators."
+caption = "Public dashboard for monitoring the IRPGT and regulatory account balance"
 
 [[extra.projects]]
 title = "Costplan"
