@@ -25,7 +25,8 @@ social = [
 # Footer links
 footer_links = [
   { text = "Resume",       url = "/pdf/resume.pdf",      arrow_direction = "top_right" },
-  { text = "Certificates", url = "certificates/",   arrow_direction = "right" }
+  { text = "Certificates", url = "certificates/",   arrow_direction = "right" },
+  { text = "Projects",     url = "projects/",       arrow_direction = "right" }
 ]
 
 # About section
@@ -92,6 +93,17 @@ alt = "Social preview for django-htmx-nav, showing a Python library for server-d
 caption = "A Python library for seamless server-driven navigation with Django and HTMX"
 
 [[extra.projects]]
+title = "Gas Regulatory Tracking Account BI"
+description = "Power BI dashboard for monthly tracking and calculation of the Gas & Transport Price Index (IRPGT) and Account Balance under ARESC Resolution 73/2016. A pioneering initiative in state-level regulatory transparency, enabling users to forecast tariff adjustments and ensuring fair, non-profit energy pricing."
+url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
+tags = ["Power BI", "DAX", "Power Query", "Data Analysis", "Public Regulation"]
+[[extra.projects.media]]
+type = "image"
+src = "/img/conta-grafica.png"
+alt = "Power BI dashboard interface showing IRPGT evolution charts, account balance calculations, and key metrics."
+caption = "Monthly IRPGT calculation and account balance tracking interface"
+
+[[extra.projects]]
 title = "Costplan"
 description = "Web application for civil engineering project cost estimation, enabling the creation of Unit Price Spreadsheets (UPS) based on predefined cost compositions and a structured input database."
 url = ""
@@ -112,26 +124,4 @@ type = "image"
 src = "/img/hardplan.jpg"
 alt = "Hardplan app interface in the Line of Balance scheduling view, illustrating a 10-story building timeline from structure to finishing."
 caption = "Line of Balance scheduling view"
-
-[[extra.projects]]
-title = "Hardplan ERP"
-description = "Relational database supporting the core features of an ERP system for construction companies: projects, inputs, suppliers, contracts and cost control."
-url = "https://github.com/Harddus0/cs50sql"
-tags = ["SQL", "Data Modeling", "Construction"]
-[[extra.projects.media]]
-type = "image"
-src = "/img/ERP.png"
-alt = "Simplified Mermaid Entity Relationship Diagram showcasing the relational database structure for Hardplan ERP."
-caption = "Entity Relationship Diagram of the database"
-
-[[extra.projects]]
-title = "Budgetpy"
-description = "Python CLI tool for calculating civil construction project costs using SINAPI data, with support for cost compositions and exportable report generation."
-url = "https://github.com/Harddus0/cs50p"
-tags = ["Python", "CLI", "SINAPI", "Cost Estimation"]
-[[extra.projects.media]]
-type = "image"
-src = "/img/budgetpy.png"
-alt = "Budgetpy command-line interface showing the interactive menu and itemized cost calculation results."
-caption = "CLI interface for construction cost calculation"
 +++

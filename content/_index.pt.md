@@ -24,8 +24,9 @@ social = [
 
 # Footer links
 footer_links = [
-  { text = "Currículo", url = "/pdf/curriculo.pdf", arrow_direction = "top_right" },
-  { text = "Certificados", url = "certificates/", arrow_direction = "right" }
+  { text = "Currículo",    url = "/pdf/curriculo.pdf",   arrow_direction = "top_right" },
+  { text = "Certificados", url = "certificates/",        arrow_direction = "right" },
+  { text = "Projetos",     url = "projects/",            arrow_direction = "right" }
 ]
 
 # Seção Sobre - Strings multilinha preservando HTML interno
@@ -93,6 +94,17 @@ alt = "Prévia social do django-htmx-nav, destacando uma biblioteca Python para 
 caption = "Biblioteca Python para navegação fluida orientada ao servidor com Django e HTMX"
 
 [[extra.projects]]
+title = "BI da Conta Gráfica do Gás"
+description = "Painel em Power BI para acompanhamento mensal e apuração do IRPGT e do saldo da Conta Gráfica conforme a Resolução ARESC nº 73/2016. Iniciativa pioneira em transparência regulatória estadual que permite a previsão de atualizações tarifárias e assegura a modicidade tarifária no setor."
+url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
+tags = ["Power BI", "DAX", "Power Query", "Análise de Dados", "Regulação Pública"]
+[[extra.projects.media]]
+type = "image"
+src = "/img/conta-grafica.png"
+alt = "Interface do dashboard em Power BI exibindo o gráfico de evolução do IRPGT, tabela de apuração e indicadores chave."
+caption = "Painel de apuração mensal do IRPGT e acompanhamento do saldo da conta gráfica"
+
+[[extra.projects]]
 title = "Costplan"
 description = "Aplicação web para o orçamento projetos de engenharia civil com criação de Planilhas de Preços Unitários (PPU) com base em Composições de Custos predefinidas."
 url = ""
@@ -113,26 +125,4 @@ type = "image"
 src = "/img/hardplan.jpg"
 alt = "Tela do aplicativo Hardplan na visualização de cronograma por Linha de Balanço, mostrando o planejamento de um edifício de 10 pavimentos da estrutura aos acabamentos."
 caption = "Visualização de cronograma por Linha de Balanço"
-
-[[extra.projects]]
-title = "Hardplan ERP"
-description = "Banco de dados relacional para suporte das principais funcionalidades de um ERP voltado para construção civil: obras, insumos, fornecedores, contratos e controle de custos."
-url = "https://github.com/Harddus0/cs50sql"
-tags = ["SQL", "Modelagem de Dados", "Construção Civil"]
-[[extra.projects.media]]
-type = "image"
-src = "/img/ERP.png"
-alt = "Diagrama de Entidade-Relacionamento em Mermaid simplificada para o banco de dados do Hardplan ERP."
-caption = "Diagrama de Entidade-Relacionamento do banco de dados"
-
-[[extra.projects]]
-title = "Budgetpy"
-description = "CLI em Python para cálculo de custos de projetos de construção civil utilizando dados do SINAPI, com suporte a composições de custos e geração de relatórios exportáveis."
-url = "https://github.com/Harddus0/cs50p"
-tags = ["Python", "CLI", "SINAPI", "Orçamento"]
-[[extra.projects.media]]
-type = "image"
-src = "/img/budgetpy.png"
-alt = "Interface de linha de comando do Budgetpy exibindo o menu interativo e o resultado de um cálculo de custos."
-caption = "Interface CLI para cálculo de custos e relatórios"
 +++
