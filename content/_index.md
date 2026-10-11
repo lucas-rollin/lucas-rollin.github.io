@@ -30,7 +30,7 @@ footer_links = [
 
 # About section
 about_paragraphs = [
-  "I'm a Civil Engineer graduated from <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> (GPA 8.8/10.0) working across software development, data analysis, and engineering. I build web applications with <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">Alpine.js</span> and <span class=\"tech\">Tailwind CSS</span>, automate workflows with <span class=\"tech\">Python</span> and <span class=\"tech\">Google Apps Script</span>, and design strategic dashboards with <span class=\"tech\">Power BI</span>. Currently, I am pursuing a degree in Systems Analysis and Development at <a href=\"https://www.uninter.com/\" target=\"_blank\" class=\"link-custom\">UNINTER</a> with a full academic scholarship based on national exam performance.",
+  "I'm a Civil Engineer graduated from <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> working across software development, data analysis, and engineering. I build web applications with <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">Alpine.js</span> and <span class=\"tech\">Tailwind CSS</span>, automate workflows with <span class=\"tech\">Python</span> and <span class=\"tech\">Google Apps Script</span>, and design strategic dashboards with <span class=\"tech\">Power BI</span>. Currently, I am pursuing a degree in Systems Analysis and Development at <a href=\"https://www.uninter.com/\" target=\"_blank\" class=\"link-custom\">UNINTER</a> with a full academic scholarship based on national exam performance.",
   "I currently work as a Civil Engineer at <a href=\"https://www.aresc.sc.gov.br/\" target=\"_blank\" class=\"link-custom\">ARESC</a>, where I develop internal web applications, automate data collection and processing routines, cutting operational time by 40%, and build dashboards for regulatory indicator monitoring.",
   "Throughout my career I have also worked at <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a> in market intelligence and geospatial analysis, and at <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, managing planning and control across 4 vertical construction projects (~12,000 m²). I am a native Portuguese speaker, fluent in English (C2), and hold all five Harvard CS50 certifications: <a href=\"/certificates/\" class=\"link-custom\">CS50x, CS50P, CS50 SQL, CS50W and CS50AI</a>."
 ]
@@ -40,8 +40,8 @@ about_paragraphs = [
 url = "https://www.aresc.sc.gov.br/"
 date = "DEC 2024 — PRESENT"
 title = "Civil Engineer · ARESC"
-description = "Regulation, inspection and process management in the state infrastructure sector. I develop internal web applications with Django, HTMX, Alpine.js and Tailwind CSS; automate data collection and processing routines with Python and Google Apps Script, reducing operational time by 40%; and build Power BI dashboards for regulatory indicator monitoring."
-tags = ["Python | Django", "HTMX", "Alpine.js", "Tailwind CSS", "Apps Script", "Power BI", "Data Analysis"]
+description = "I work in public utilities regulation and oversight, combining engineering and technology. Collaborating on a modular web application I lead development of the Ombudsman module, which enables public submissions. I also automate processes with Python and Google Apps Script, reducing operational time by 40%, and develop Power BI dashboards."
+tags = ["Django | Python", "HTMX", "Alpine.js", "Tailwind CSS", "Apps Script", "Power BI", "Data Analysis"]
 
 [[extra.experience]]
 url = "https://lucas-rollin.github.io/"
