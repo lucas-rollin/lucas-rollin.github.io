@@ -105,6 +105,14 @@
                   /> }}
               {% endfor %}
             </div>
+            <div class="pt-4">
+              {{ <ui.link_with_arrow
+                url="projects/"
+                text={trans(key="all_projects", lang=lang)}
+                arrow_direction="right"
+                underline={true}
+                /> }}
+            </div>
           {% endif %}
         </section>
         <footer class="space-y-4">

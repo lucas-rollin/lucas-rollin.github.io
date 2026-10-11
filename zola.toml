@@ -28,6 +28,9 @@ year = "Year"
 certificate = "Certificate"
 institution = "Institution"
 competences = "Competences"
+project = "Project"
+made_at = "Made at"
+all_projects = "View Full Project Archive"
 
 [languages.pt]
 title = "Meu portfólio"
@@ -43,6 +46,9 @@ year = "Ano"
 certificate = "Certificado"
 institution = "Instituição"
 competences = "Competências"
+project = "Projeto"
+made_at = "Contexto"
+all_projects = "Ver arquivo completo de projetos"
 
 [extra]
 # Put all your custom variables here
