@@ -40,7 +40,7 @@ about_paragraphs = [
 url = "https://www.aresc.sc.gov.br/"
 date = "DEZ 2024 — PRESENTE"
 title = "Engenheiro Civil · ARESC"
-description = "Regulação, fiscalização e gestão de processos do setor de infraestrutura estadual. Desenvolvo aplicações web internas com Django, HTMX, Alpine.js e Tailwind CSS; automatizo rotinas de coleta e processamento de dados com Python e Google Apps Script, reduzindo o tempo operacional em 40%; e construo dashboards em Power BI para monitoramento de indicadores regulatórios."
+description = "Atuo na regulação e fiscalização de serviços públicos, conciliando engenharia e tecnologia. Desenvolvo, em equipe, uma aplicação web modular, sendo responsável pelo módulo de Ouvidoria, que permite o envio público de manifestações. Também automatizo processos com Python e Google Apps Script, reduzindo o tempo operacional em 40%, e desenvolvo dashboards em Power BI."
 tags = ["Python | Django", "HTMX", "Alpine.js", "Tailwind CSS", "Apps Script", "Power BI", "Análise de Dados"]
 
 [[extra.experience]]
