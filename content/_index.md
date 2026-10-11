@@ -41,7 +41,7 @@ url = "https://www.aresc.sc.gov.br/"
 date = "DEC 2024 — PRESENT"
 title = "Civil Engineer · ARESC"
 description = "I work in public utilities regulation and oversight, combining engineering and technology. Collaborating on a modular web application I lead development of the Ombudsman module, which enables public submissions. I also automate processes with Python and Google Apps Script, reducing operational time by 40%, and develop Power BI dashboards."
-tags = ["Python | Django", "HTMX", "Alpine.js", "Tailwind CSS", "Apps Script", "Power BI", "Data Analysis"]
+tags = ["Django | Python", "HTMX", "Alpine.js", "Tailwind CSS", "Apps Script", "Power BI", "Data Analysis"]
 
 [[extra.experience]]
 url = "https://lucas-rollin.github.io/"
