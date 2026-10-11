@@ -22,18 +22,11 @@ social = [
   { platform = "email", url = "mailto:lucasrollinferreira@gmail.com" }
 ]
 
-# Footer links
-footer_links = [
-  { text = "Currículo",    url = "/pdf/curriculo.pdf",   arrow_direction = "top_right" },
-  { text = "Certificados", url = "certificates/",        arrow_direction = "right" },
-  { text = "Projetos",     url = "projects/",            arrow_direction = "right" }
-]
-
 # Seção Sobre - Strings multilinha preservando HTML interno
 about_paragraphs = [
   "Sou Engenheiro Civil formado pela <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> com atuação híbrida entre desenvolvimento de software, análise de dados e engenharia. Desenvolvo aplicações web com <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">Alpine.js</span> e <span class=\"tech\">Tailwind CSS</span>, automatizo processos com <span class=\"tech\">Python</span> e <span class=\"tech\">Google Apps Script</span> e construo dashboards estratégicos com <span class=\"tech\">Power BI</span>. Hoje, curso Análise e Desenvolvimento de Sistemas na <a href=\"https://www.uninter.com/\" target=\"_blank\" class=\"link-custom\">UNINTER</a>, com bolsa integral por desempenho no ENEM.",
   "Atualmente atuo como Engenheiro Civil na <a href=\"https://www.aresc.sc.gov.br/\" target=\"_blank\" class=\"link-custom\">ARESC</a>, onde desenvolvo aplicações web internas, automatizo rotinas de coleta e processamento de dados, reduzindo o tempo operacional em 40%, e construo dashboards para monitoramento de indicadores regulatórios.",
-  "Ao longo da minha trajetória trabalhei na <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a>, com inteligência de mercado e análise geoespacial, e na <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, com planejamento e controle de 4 obras verticais (~12.000 m²). Sou fluente em inglês (C2) e possuo as cinco certificações Harvard CS50: <a href=\"certificates/\" class=\"link-custom\">CS50x, CS50P, CS50 SQL, CS50W e CS50AI</a>."
+  "Ao longo da minha trajetória trabalhei na <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a>, com inteligência de mercado e análise geoespacial, e na <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, com planejamento e controle de 4 obras verticais (~12.000 m²). Sou fluente em inglês (C2)."
 ]
 
 # Seção Experiência
@@ -73,6 +66,13 @@ url = "https://www.uninter.com/graduacao/a-distancia/tecnologia-em-analise-e-des
 degree = "Tecnologia em Análise e Desenvolvimento de Sistemas"
 date = "2025 — 2028"
 description = "Bolsa integral (100%) por desempenho no ENEM."
+
+[[extra.education]]
+institution = "Harvard University"
+url = "https://cs50.harvard.edu/x/"
+degree = "CS50 — Cursos em Ciência de Computação"
+date = "JUL 2024 — DEZ 2024"
+description = "5 certificações concluídas: CS50x, CS50 Python, CS50 SQL, CS50 Web e CS50 AI."
 
 [[extra.education]]
 institution = "Universidade Federal de Santa Catarina (UFSC)"
