@@ -24,7 +24,7 @@ social = [
 
 # Seção Sobre - Strings multilinha preservando HTML interno
 about_paragraphs = [
-  "Sou Engenheiro Civil formado pela <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> com atuação híbrida entre desenvolvimento de software, análise de dados e engenharia. Desenvolvo aplicações web com <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">Alpine.js</span> e <span class=\"tech\">Tailwind CSS</span>, automatizo processos com <span class=\"tech\">Python</span> e <span class=\"tech\">Google Apps Script</span> e construo dashboards estratégicos com <span class=\"tech\">Power BI</span>. Hoje, curso Análise e Desenvolvimento de Sistemas na <a href=\"https://www.uninter.com/\" target=\"_blank\" class=\"link-custom\">UNINTER</a>, com bolsa integral por desempenho no ENEM.",
+  "Sou Engenheiro Civil formado pela <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> com atuação híbrida entre desenvolvimento de software, análise de dados e engenharia. Desenvolvo aplicações web com <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">Alpine.js</span> e <span class=\"tech\">Tailwind CSS</span>, automatizo processos com <span class=\"tech\">Python</span> e <span class=\"tech\">Google Apps Script</span> e construo dashboards estratégicos com <span class=\"tech\">Power BI</span>. Hoje, curso Análise e Desenvolvimento de Sistemas na <a href=\"https://www.uninter.com/\" target=\"_blank\" class=\"link-custom\">UNINTER</a>.",
   "Atualmente atuo como Engenheiro Civil na <a href=\"https://www.aresc.sc.gov.br/\" target=\"_blank\" class=\"link-custom\">ARESC</a>, onde desenvolvo aplicações web internas, automatizo rotinas de coleta e processamento de dados, reduzindo o tempo operacional em 40%, e construo dashboards para monitoramento de indicadores regulatórios.",
   "Ao longo da minha trajetória trabalhei na <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a>, com inteligência de mercado e análise geoespacial, e na <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, com planejamento e controle de 4 obras verticais (~12.000 m²). Sou fluente em inglês (C2)."
 ]
@@ -34,28 +34,28 @@ about_paragraphs = [
 url = "https://www.aresc.sc.gov.br/"
 date = "DEZ 2024 — PRESENTE"
 title = "Engenheiro Civil · ARESC"
-description = "Atuo na regulação e fiscalização de serviços públicos, conciliando engenharia e tecnologia. Desenvolvo, em equipe, uma aplicação web modular, sendo responsável pelo módulo de Ouvidoria, que permite o envio público de manifestações. Também automatizo processos com Python e Google Apps Script, reduzindo o tempo operacional em 40%, e desenvolvo dashboards em Power BI."
+description = "Lidero o módulo de Ouvidoria de uma aplicação web modular para uma agência reguladora e automatizo rotinas de dados, reduzindo o tempo operacional em 40%. Também desenvolvo dashboards em Power BI."
 tags = ["Django | Python", "HTMX", "Alpine.js", "Tailwind CSS", "Apps Script", "Power BI", "Análise de Dados"]
 
 [[extra.experience]]
 url = "https://lucas-rollin.github.io/"
 date = "NOV 2024 — FEV 2026"
 title = "Desenvolvedor Full-Stack e Orçamentista | Freelance"
-description = "Desenvolvimento de Web App para orçamento de obras de engenharia utilizando Django, Vanilla JavaScript e SQL, com modelagem de banco de dados para estruturação de insumos e composições de custos. Entrega de dashboards estratégicos e automações personalizadas para clientes de diferentes segmentos."
+description = "Desenvolvi o Costplan, aplicação de orçamento para engenharia civil, e entreguei dashboards e automações para clientes de diversos segmentos."
 tags = ["Django | Python", "JavaScript", "SQL", "Power BI", "Orçamento"]
 
 [[extra.experience]]
 url = "https://www.scgas.com.br/"
 date = "SET 2023 — JUL 2024"
 title = "Estagiário de Planejamento e Inteligência de Mercado · SCGÁS"
-description = "Criação de dashboards em Power BI para análise da carteira de projetos de gás canalizado; mapeamento e otimização de processos de gerenciamento com BPMN (Bizagi); e estudos geoespaciais e estatísticos com QGIS para identificação de clientes potenciais, apoiando decisões estratégicas."
-tags = ["Power BI", "Excel Avançado", "QGIS", "Bizagi (BPMN)", "Análise de Dados"]
+description = "Criei dashboards em Power BI para a carteira de projetos de gás canalizado, mapeei processos em BPMN e usei QGIS para identificar clientes potenciais."
+tags = ["Power BI", "Excel Avançado", "QGIS", "BPMN", "Análise de Dados"]
 
 [[extra.experience]]
 url = "https://www.dacampos.com.br/"
 date = "ABR 2022 — JUL 2023"
 title = "Estagiário de Planejamento e Engenharia Civil · D'Campos Construtora"
-description = "Acompanhamento de 4 obras verticais (~12.000 m²) com controle de prazo, qualidade e quantitativos. Elaboração de cronogramas físicos no MS Project, controle de materiais via ERP Sienge e desenvolvimento de manuais e fichas de verificação de serviço (FVS) para padronização da qualidade construtiva."
+description = "Acompanhei prazo, qualidade e quantitativos de 4 obras verticais (~12.000 m²), com cronogramas no MS Project, controle no Sienge e fichas de verificação (FVS)."
 tags = ["MS Project", "Excel Avançado", "Sienge ERP", "AutoCAD", "Gestão da Qualidade"]
 
 # Seção Formação acadêmica
@@ -80,7 +80,7 @@ logo = "/img/harvard.png"
 institution = "Universidade Federal de Santa Catarina (UFSC)"
 url = "https://ufsc.br/"
 degree = "Bacharelado em Engenharia Civil"
-date = "2018 — 2024"
+date = "2017 — 2024"
 description = "IAP: 8,8/10,0."
 logo = "/img/ufsc.png"
 
@@ -98,7 +98,7 @@ caption = "Biblioteca Python para navegação fluida orientada ao servidor com D
 
 [[extra.projects]]
 title = "Dashboard da Conta Gráfica do Gás"
-description = "Desenvolvi um painel público em Power BI para a ARESC acompanhar o Índice de Reajuste do Preço do Gás e do Transporte (IRPGT) e o saldo da conta gráfica, conforme a Resolução nº 73/2016. Facilita o acesso público aos dados de atualização tarifária e amplia a transparência na regulação da distribuição de gás natural."
+description = "Painel público em Power BI para a ARESC acompanhar o Índice de Reajuste do Preço do Gás e do Transporte (IRPGT) e o saldo da conta gráfica, conforme a Resolução nº 73/2016."
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
 tags = ["Power BI", "DAX", "Power Query", "Visualização de Dados", "Setor Público"]
 [[extra.projects.media]]

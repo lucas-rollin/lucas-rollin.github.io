@@ -23,6 +23,13 @@
   .tech {
     @apply font-mono text-[0.95em] text-primary;
   }
+
+  @media (hover: hover) {
+    .dim-siblings:hover > .dim-item:not(:hover),
+    .dim-siblings:has(:focus-visible) > .dim-item:not(:focus-within) {
+      opacity: 0.6;
+    }
+  }
 }
 
 @custom-variant tall (@media (min-height: 700px));
