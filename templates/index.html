@@ -58,7 +58,7 @@
             {{ trans(key="experience", lang=lang) }}
           </h3>
           {% if section.extra.experience %}
-            <div class="space-y-4 md:space-y-2">
+            <div class="dim-siblings space-y-4 md:space-y-2">
               {% for exp in section.extra.experience %}
                 {{ <ui.experience_block
                   url={exp.url}
@@ -84,7 +84,7 @@
             {{ trans(key="education", lang=lang) }}
           </h3>
           {% if section.extra.education %}
-            <div class="space-y-4 md:space-y-2">
+            <div class="dim-siblings space-y-4 md:space-y-2">
               {% for ed in section.extra.education %}
                 {{ <ui.education_block
                   url={ed.url}
@@ -111,7 +111,7 @@
             {{ trans(key="projects", lang=lang) }}
           </h3>
           {% if section.extra.projects %}
-            <div class="space-y-4 md:space-y-2">
+            <div class="dim-siblings space-y-4 md:space-y-2">
               {% for project in section.extra.projects %}
                 {{ <ui.project_block
                   title={project.title}

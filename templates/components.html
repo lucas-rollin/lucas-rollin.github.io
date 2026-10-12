@@ -3,12 +3,12 @@
   <a href="{{ url }}"
      target="_blank"
      class="inline group/link w-fit {% if absolute %} md:after:absolute md:after:inset-0 {% endif %}">
-    <span class="{% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
+    <span class="{% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
       {% for word in words %}
         {% if loop.last %}
-          <span class="inline-block whitespace-nowrap {% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
+          <span class="inline-block whitespace-nowrap {% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
             {{ word }}
-            <svg class="inline-block w-5 h-5 translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %}"
+            <svg class="inline-block w-5 h-5 translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %}  {% if underline %} group-hover/link:text-primary {% endif %}"
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
                  fill="none"
@@ -34,7 +34,7 @@
   </a>
 {% endcomponent %}
 {% component ui.experience_block(url, date, title, description, tags) %}
-  <div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
+  <div class="dim-item relative block lg:flex gap-4 p-4 rounded-lg transition duration-300 ease-in-out md:hover:bg-base-200">
     <div class="date text-base font-semibold min-w-44 uppercase">{{ date }}</div>
     <div class="flex-1 space-y-2 md:space-y-4">
       <h4 class="text-lg font-bold">{{ <ui.link_with_arrow url={url} text={title} absolute={true} /> }}</h4>
@@ -48,7 +48,7 @@
   </div>
 {% endcomponent %}
 {% component ui.education_block(url, date, institution, degree, description, logo="") %}
-  <div class="relative block lg:flex gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
+  <div class="dim-item relative block lg:flex gap-4 p-4 rounded-lg transition duration-300 ease-in-out md:hover:bg-base-200">
     <div class="min-w-44 lg:w-44 lg:shrink-0">
       <p class="date text-base font-semibold uppercase">{{ date }}</p>
     </div>
@@ -63,7 +63,7 @@
       <div class="flex items-center gap-2">
         {% if logo %}
           <img src="{{ logo }}"
-               alt="logo {{ institution }}"
+               alt=""
                class="size-6"
                loading="lazy"
                decoding="async" />
@@ -80,7 +80,7 @@
   {%- set has_media = media | length > 0 -%}
   {%- set thumb = media | first -%}
   {%- set media_json = media | json_encode -%}
-  <div class="relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition-colors duration-300 ease-in-out md:hover:bg-base-200">
+  <div class="dim-item relative block lg:flex flex-row-reverse gap-4 p-4 rounded-lg transition duration-300 ease-in-out md:hover:bg-base-200">
     <div class="flex-1 space-y-2 md:space-y-4">
       <div class="flex">
         {% if url %}
