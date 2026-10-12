@@ -65,6 +65,7 @@ url = "https://www.uninter.com/graduacao/a-distancia/tecnologia-em-analise-e-des
 degree = "Technologist in Systems Analysis and Development"
 date = "2025 — 2028"
 description = "Full merit-based scholarship (100%) through national exam (ENEM) performance."
+logo = "/img/uninter.png"
 
 [[extra.education]]
 institution = "Harvard University"
@@ -72,6 +73,7 @@ url = "https://cs50.harvard.edu/x/"
 degree = "CS50 — Computer Science Courses"
 date = "JUL 2024 — DEC 2024"
 description = "5 concluded certifications: CS50x, CS50 Python, CS50 SQL, CS50 Web and CS50 AI."
+logo = "/img/harvard.png"
 
 [[extra.education]]
 institution = "Federal University of Santa Catarina (UFSC)"
@@ -79,6 +81,7 @@ url = "https://ufsc.br/"
 degree = "B.Sc. in Civil Engineering"
 date = "2018 — 2024"
 description = "GPA: 8.8/10.0."
+logo = "/img/ufsc.png"
 
 # Projects section
 [[extra.projects]]

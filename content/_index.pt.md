@@ -66,6 +66,7 @@ url = "https://www.uninter.com/graduacao/a-distancia/tecnologia-em-analise-e-des
 degree = "Tecnologia em Análise e Desenvolvimento de Sistemas"
 date = "2025 — 2028"
 description = "Bolsa integral (100%) por desempenho no ENEM."
+logo = "/img/uninter.png"
 
 [[extra.education]]
 institution = "Harvard University"
@@ -73,6 +74,7 @@ url = "https://cs50.harvard.edu/x/"
 degree = "CS50 — Cursos em Ciência de Computação"
 date = "JUL 2024 — DEZ 2024"
 description = "5 certificações concluídas: CS50x, CS50 Python, CS50 SQL, CS50 Web e CS50 AI."
+logo = "/img/harvard.png"
 
 [[extra.education]]
 institution = "Universidade Federal de Santa Catarina (UFSC)"
@@ -80,6 +82,7 @@ url = "https://ufsc.br/"
 degree = "Bacharelado em Engenharia Civil"
 date = "2018 — 2024"
 description = "IAP: 8,8/10,0."
+logo = "/img/ufsc.png"
 
 # Seção Projetos
 [[extra.projects]]
