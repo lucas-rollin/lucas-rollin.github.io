@@ -28,6 +28,12 @@ year = "Year"
 certificate = "Certificate"
 institution = "Institution"
 competences = "Competences"
+project = "Project"
+made_at = "Made at"
+resume_url = "/pdf/resume.pdf"
+view_resume = "View Full Resume"
+view_certificates = "View Certificates"
+view_projects = "View Full Project Archive"
 
 [languages.pt]
 title = "Meu portfólio"
@@ -43,6 +49,12 @@ year = "Ano"
 certificate = "Certificado"
 institution = "Instituição"
 competences = "Competências"
+project = "Projeto"
+made_at = "Contexto"
+resume_url = "/pdf/curriculo.pdf"
+view_resume = "Ver currículo completo"
+view_certificates = "Ver certificados"
+view_projects = "Ver arquivo completo de projetos"
 
 [extra]
 # Put all your custom variables here

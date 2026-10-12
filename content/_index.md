@@ -22,17 +22,11 @@ social = [
   { platform = "email",    url = "mailto:lucasrollinferreira@gmail.com" }
 ]
 
-# Footer links
-footer_links = [
-  { text = "Resume",       url = "/pdf/resume.pdf",      arrow_direction = "top_right" },
-  { text = "Certificates", url = "certificates/",   arrow_direction = "right" }
-]
-
 # About section
 about_paragraphs = [
   "I'm a Civil Engineer graduated from <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> working across software development, data analysis, and engineering. I build web applications with <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">Alpine.js</span> and <span class=\"tech\">Tailwind CSS</span>, automate workflows with <span class=\"tech\">Python</span> and <span class=\"tech\">Google Apps Script</span>, and design strategic dashboards with <span class=\"tech\">Power BI</span>. Currently, I am pursuing a degree in Systems Analysis and Development at <a href=\"https://www.uninter.com/\" target=\"_blank\" class=\"link-custom\">UNINTER</a> with a full academic scholarship based on national exam performance.",
   "I currently work as a Civil Engineer at <a href=\"https://www.aresc.sc.gov.br/\" target=\"_blank\" class=\"link-custom\">ARESC</a>, where I develop internal web applications, automate data collection and processing routines, cutting operational time by 40%, and build dashboards for regulatory indicator monitoring.",
-  "Throughout my career I have also worked at <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a> in market intelligence and geospatial analysis, and at <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, managing planning and control across 4 vertical construction projects (~12,000 m²). I am a native Portuguese speaker, fluent in English (C2), and hold all five Harvard CS50 certifications: <a href=\"/certificates/\" class=\"link-custom\">CS50x, CS50P, CS50 SQL, CS50W and CS50AI</a>."
+  "Throughout my career I have also worked at <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a> in market intelligence and geospatial analysis, and at <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, managing planning and control across 4 vertical construction projects (~12,000 m²). I am a native Portuguese speaker, fluent in English (C2)."
 ]
 
 # Experience section
@@ -71,6 +65,15 @@ url = "https://www.uninter.com/graduacao/a-distancia/tecnologia-em-analise-e-des
 degree = "Technologist in Systems Analysis and Development"
 date = "2025 — 2028"
 description = "Full merit-based scholarship (100%) through national exam (ENEM) performance."
+logo = "/img/uninter.png"
+
+[[extra.education]]
+institution = "Harvard University"
+url = "https://cs50.harvard.edu/x/"
+degree = "CS50 — Computer Science Courses"
+date = "JUL 2024 — DEC 2024"
+description = "5 concluded certifications: CS50x, CS50 Python, CS50 SQL, CS50 Web and CS50 AI."
+logo = "/img/harvard.png"
 
 [[extra.education]]
 institution = "Federal University of Santa Catarina (UFSC)"
@@ -78,6 +81,7 @@ url = "https://ufsc.br/"
 degree = "B.Sc. in Civil Engineering"
 date = "2018 — 2024"
 description = "GPA: 8.8/10.0."
+logo = "/img/ufsc.png"
 
 # Projects section
 [[extra.projects]]
@@ -90,6 +94,17 @@ type = "image"
 src = "/img/django-htmx-nav.png"
 alt = "Social preview for django-htmx-nav, showing a Python library for server-driven navigation in HTMX with Django, complete with a code snippet and installation command."
 caption = "A Python library for seamless server-driven navigation with Django and HTMX"
+
+[[extra.projects]]
+title = "Gas Tariff Regulatory Dashboard"
+description = "Developed a public Power BI dashboard for ARESC to track the Gas and Transport Price Adjustment Index (IRPGT) and the regulatory account balance under Resolution 73/2016. Improves public access to tariff adjustment data and transparency in natural gas distribution regulation."
+url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
+tags = ["Power BI", "DAX", "Power Query", "Data Visualization", "Public Regulation"]
+[[extra.projects.media]]
+type = "image"
+src = "/img/conta-grafica.png"
+alt = "Power BI dashboard displaying IRPGT trends, regulatory account balance, and related indicators."
+caption = "Public dashboard for monitoring the IRPGT and regulatory account balance"
 
 [[extra.projects]]
 title = "Costplan"
@@ -112,26 +127,4 @@ type = "image"
 src = "/img/hardplan.jpg"
 alt = "Hardplan app interface in the Line of Balance scheduling view, illustrating a 10-story building timeline from structure to finishing."
 caption = "Line of Balance scheduling view"
-
-[[extra.projects]]
-title = "Hardplan ERP"
-description = "Relational database supporting the core features of an ERP system for construction companies: projects, inputs, suppliers, contracts and cost control."
-url = "https://github.com/Harddus0/cs50sql"
-tags = ["SQL", "Data Modeling", "Construction"]
-[[extra.projects.media]]
-type = "image"
-src = "/img/ERP.png"
-alt = "Simplified Mermaid Entity Relationship Diagram showcasing the relational database structure for Hardplan ERP."
-caption = "Entity Relationship Diagram of the database"
-
-[[extra.projects]]
-title = "Budgetpy"
-description = "Python CLI tool for calculating civil construction project costs using SINAPI data, with support for cost compositions and exportable report generation."
-url = "https://github.com/Harddus0/cs50p"
-tags = ["Python", "CLI", "SINAPI", "Cost Estimation"]
-[[extra.projects.media]]
-type = "image"
-src = "/img/budgetpy.png"
-alt = "Budgetpy command-line interface showing the interactive menu and itemized cost calculation results."
-caption = "CLI interface for construction cost calculation"
 +++

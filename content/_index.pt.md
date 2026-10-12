@@ -22,17 +22,11 @@ social = [
   { platform = "email", url = "mailto:lucasrollinferreira@gmail.com" }
 ]
 
-# Footer links
-footer_links = [
-  { text = "Currículo", url = "/pdf/curriculo.pdf", arrow_direction = "top_right" },
-  { text = "Certificados", url = "certificates/", arrow_direction = "right" }
-]
-
 # Seção Sobre - Strings multilinha preservando HTML interno
 about_paragraphs = [
   "Sou Engenheiro Civil formado pela <a href=\"https://ufsc.br/\" target=\"_blank\" class=\"link-custom\">UFSC</a> com atuação híbrida entre desenvolvimento de software, análise de dados e engenharia. Desenvolvo aplicações web com <span class=\"tech\">Django</span>, <span class=\"tech\">HTMX</span>, <span class=\"tech\">Alpine.js</span> e <span class=\"tech\">Tailwind CSS</span>, automatizo processos com <span class=\"tech\">Python</span> e <span class=\"tech\">Google Apps Script</span> e construo dashboards estratégicos com <span class=\"tech\">Power BI</span>. Hoje, curso Análise e Desenvolvimento de Sistemas na <a href=\"https://www.uninter.com/\" target=\"_blank\" class=\"link-custom\">UNINTER</a>, com bolsa integral por desempenho no ENEM.",
   "Atualmente atuo como Engenheiro Civil na <a href=\"https://www.aresc.sc.gov.br/\" target=\"_blank\" class=\"link-custom\">ARESC</a>, onde desenvolvo aplicações web internas, automatizo rotinas de coleta e processamento de dados, reduzindo o tempo operacional em 40%, e construo dashboards para monitoramento de indicadores regulatórios.",
-  "Ao longo da minha trajetória trabalhei na <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a>, com inteligência de mercado e análise geoespacial, e na <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, com planejamento e controle de 4 obras verticais (~12.000 m²). Sou fluente em inglês (C2) e possuo as cinco certificações Harvard CS50: <a href=\"certificates/\" class=\"link-custom\">CS50x, CS50P, CS50 SQL, CS50W e CS50AI</a>."
+  "Ao longo da minha trajetória trabalhei na <a href=\"https://www.scgas.com.br/\" target=\"_blank\" class=\"link-custom\">SCGÁS</a>, com inteligência de mercado e análise geoespacial, e na <a href=\"https://www.dacampos.com.br/\" target=\"_blank\" class=\"link-custom\">D'Campos Construtora</a>, com planejamento e controle de 4 obras verticais (~12.000 m²). Sou fluente em inglês (C2)."
 ]
 
 # Seção Experiência
@@ -72,6 +66,15 @@ url = "https://www.uninter.com/graduacao/a-distancia/tecnologia-em-analise-e-des
 degree = "Tecnologia em Análise e Desenvolvimento de Sistemas"
 date = "2025 — 2028"
 description = "Bolsa integral (100%) por desempenho no ENEM."
+logo = "/img/uninter.png"
+
+[[extra.education]]
+institution = "Harvard University"
+url = "https://cs50.harvard.edu/x/"
+degree = "CS50 — Cursos em Ciência de Computação"
+date = "JUL 2024 — DEZ 2024"
+description = "5 certificações concluídas: CS50x, CS50 Python, CS50 SQL, CS50 Web e CS50 AI."
+logo = "/img/harvard.png"
 
 [[extra.education]]
 institution = "Universidade Federal de Santa Catarina (UFSC)"
@@ -79,6 +82,7 @@ url = "https://ufsc.br/"
 degree = "Bacharelado em Engenharia Civil"
 date = "2018 — 2024"
 description = "IAP: 8,8/10,0."
+logo = "/img/ufsc.png"
 
 # Seção Projetos
 [[extra.projects]]
@@ -91,6 +95,17 @@ type = "image"
 src = "/img/django-htmx-nav.png"
 alt = "Prévia social do django-htmx-nav, destacando uma biblioteca Python para navegação orientada ao servidor com HTMX em Django, acompanhada de trecho de código e comando de instalação."
 caption = "Biblioteca Python para navegação fluida orientada ao servidor com Django e HTMX"
+
+[[extra.projects]]
+title = "Dashboard da Conta Gráfica do Gás"
+description = "Desenvolvi um painel público em Power BI para a ARESC acompanhar o Índice de Reajuste do Preço do Gás e do Transporte (IRPGT) e o saldo da conta gráfica, conforme a Resolução nº 73/2016. Facilita o acesso público aos dados de atualização tarifária e amplia a transparência na regulação da distribuição de gás natural."
+url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
+tags = ["Power BI", "DAX", "Power Query", "Visualização de Dados", "Setor Público"]
+[[extra.projects.media]]
+type = "image"
+src = "/img/conta-grafica.png"
+alt = "Painel Power BI com a evolução do IRPGT, o saldo da conta gráfica e indicadores relacionados."
+caption = "Painel público de acompanhamento do IRPGT e do saldo da conta gráfica"
 
 [[extra.projects]]
 title = "Costplan"
@@ -113,26 +128,4 @@ type = "image"
 src = "/img/hardplan.jpg"
 alt = "Tela do aplicativo Hardplan na visualização de cronograma por Linha de Balanço, mostrando o planejamento de um edifício de 10 pavimentos da estrutura aos acabamentos."
 caption = "Visualização de cronograma por Linha de Balanço"
-
-[[extra.projects]]
-title = "Hardplan ERP"
-description = "Banco de dados relacional para suporte das principais funcionalidades de um ERP voltado para construção civil: obras, insumos, fornecedores, contratos e controle de custos."
-url = "https://github.com/Harddus0/cs50sql"
-tags = ["SQL", "Modelagem de Dados", "Construção Civil"]
-[[extra.projects.media]]
-type = "image"
-src = "/img/ERP.png"
-alt = "Diagrama de Entidade-Relacionamento em Mermaid simplificada para o banco de dados do Hardplan ERP."
-caption = "Diagrama de Entidade-Relacionamento do banco de dados"
-
-[[extra.projects]]
-title = "Budgetpy"
-description = "CLI em Python para cálculo de custos de projetos de construção civil utilizando dados do SINAPI, com suporte a composições de custos e geração de relatórios exportáveis."
-url = "https://github.com/Harddus0/cs50p"
-tags = ["Python", "CLI", "SINAPI", "Orçamento"]
-[[extra.projects.media]]
-type = "image"
-src = "/img/budgetpy.png"
-alt = "Interface de linha de comando do Budgetpy exibindo o menu interativo e o resultado de um cálculo de custos."
-caption = "Interface CLI para cálculo de custos e relatórios"
 +++

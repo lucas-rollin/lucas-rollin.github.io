@@ -70,6 +70,14 @@
               {% endfor %}
             </div>
           {% endif %}
+          <div class="pl-4 pt-2 font-semibold">
+            {{ <ui.link_with_arrow
+              url={trans(key="resume_url", lang=lang)}
+              text={trans(key="view_resume", lang=lang)}
+              arrow_direction="right"
+              underline={true}
+              /> }}
+          </div>
         </section>
         <section id="education" class="relative md:static space-y-2 md:space-y-4">
           <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
@@ -84,10 +92,19 @@
                   institution={ed.institution}
                   degree={ed.degree}
                   description={ed.description}
+                  logo={ed.logo or ""}
                   /> }}
               {% endfor %}
             </div>
           {% endif %}
+          <div class="pl-4 pt-2 font-semibold">
+            {{ <ui.link_with_arrow
+              url="certificates/"
+              text={trans(key="view_certificates", lang=lang)}
+              arrow_direction="right"
+              underline={true}
+              /> }}
+          </div>
         </section>
         <section id="projects" class="relative md:static space-y-2 md:space-y-4">
           <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
@@ -105,21 +122,17 @@
                   /> }}
               {% endfor %}
             </div>
+            <div class="pl-4 pt-2 font-semibold">
+              {{ <ui.link_with_arrow
+                url="projects/"
+                text={trans(key="view_projects", lang=lang)}
+                arrow_direction="right"
+                underline={true}
+                /> }}
+            </div>
           {% endif %}
         </section>
         <footer class="space-y-4">
-          <div class="flex justify-center gap-6 text-lg flex-wrap">
-            {% if section.extra.footer_links %}
-              {% for link in section.extra.footer_links %}
-                {{ <ui.link_with_arrow
-                  url={link.url}
-                  text={link.text}
-                  arrow_direction={link.arrow_direction or "right"}
-                  underline={true}
-                  /> }}
-              {% endfor %}
-            {% endif %}
-          </div>
           <div class="flex justify-center pt-2 border-t border-base-300">
             <p class="text-center">
               {{ trans(key="built_with", lang=lang) }}
