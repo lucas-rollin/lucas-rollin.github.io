@@ -62,7 +62,11 @@
       </h4>
       <div class="flex items-center gap-2">
         {% if logo %}
-        <img src={{ logo }} alt="logo {{ institution }}" class="size-6" loading="lazy" decoding="async"/>
+          <img src="{{ logo }}"
+               alt="logo {{ institution }}"
+               class="size-6"
+               loading="lazy"
+               decoding="async" />
         {% endif %}
         <p>{{ institution }}</p>
       </div>
