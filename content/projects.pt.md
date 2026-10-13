@@ -1,62 +1,62 @@
 +++
 title = "Todos os Projetos"
-template = "projects.html"
+template = "archive.html"
 
 [extra]
 name = "Lucas Rollin Ferreira"
 
-[[extra.projects]]
+[[extra.items]]
 year = 2026
 title = "django-htmx-nav"
-category = "Open Source"
+made_at = "Open Source"
 tags = ["Django | Python", "HTMX", "Alpine.js", "ECharts", "CI/CD"]
 url = "https://lucas-rollin.github.io/django-htmx-nav/"
 display_link = "lucas-rollin.github.io"
 
-[[extra.projects]]
+[[extra.items]]
 year = 2025
 title = "Dashboard da Conta Gráfica do Gás"
-category = "ARESC"
+made_at = "ARESC"
 tags = ["Power BI", "DAX", "Power Query", "Análise de Dados", "Regulação Pública"]
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
 display_link = "aresc.sc.gov.br"
 
-[[extra.projects]]
+[[extra.items]]
 year = 2025
 title = "Costplan"
-category = "Freelance"
+made_at = "Freelance"
 tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Orçamento"]
 url = ""
 
-[[extra.projects]]
+[[extra.items]]
 year = 2024
 title = "Costplan Core"
-category = "Harvard CS50"
+made_at = "Harvard CS50 Web"
 tags = ["Django | Python", "JavaScript", "SQL", "SCSS", "Orçamento"]
 url = "https://github.com/lucas-rollin/costplan-core"
 display_link = "github.com"
 
-[[extra.projects]]
-year = 2024
-title = "Hardplan"
-category = "Harvard CS50"
-tags = ["Flask | Python", "SQL", "JavaScript", "Planejamento"]
-url = "https://github.com/Harddus0/cs50fp"
-display_link = "github.com"
-
-[[extra.projects]]
+[[extra.items]]
 year = 2024
 title = "Hardplan ERP"
-category = "Harvard CS50"
+made_at = "Harvard CS50 SQL"
 tags = ["SQL", "Modelagem de Dados", "Construção Civil"]
 url = "https://github.com/Harddus0/cs50sql"
 display_link = "github.com"
 
-[[extra.projects]]
+[[extra.items]]
 year = 2024
 title = "Budgetpy"
-category = "Harvard CS50"
+made_at = "Harvard CS50P"
 tags = ["Python", "CLI", "SINAPI", "Orçamento"]
 url = "https://github.com/Harddus0/cs50p"
+display_link = "github.com"
+
+[[extra.items]]
+year = 2024
+title = "Hardplan"
+made_at = "Harvard CS50x"
+tags = ["Flask | Python", "SQL", "JavaScript", "Planejamento"]
+url = "https://github.com/Harddus0/cs50fp"
 display_link = "github.com"
 +++

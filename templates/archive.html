@@ -34,18 +34,18 @@
           </tr>
         </thead>
         <tbody>
-          {% for proj in page.extra.projects %}
-            {% set proj_link = proj.url | default(value=proj.link) %}
+          {% for item in page.extra.items %}
+            {% set item_link = item.url | default(value=item.link) %}
             <tr class="hover:bg-base-200/40 transition-colors duration-200">
-              <td class="font-mono text-base-content/70 font-medium text-sm sm:text-base">{{ proj.year }}</td>
+              <td class="font-mono text-base-content/70 font-medium text-sm sm:text-base py-4">{{ item.year }}</td>
               <td class="font-semibold text-base-content">
-                {% if proj_link %}
-                  <span class="hidden sm:inline">{{ proj.title }}</span>
-                  <a href="{{ proj_link | safe }}"
+                {% if item_link %}
+                  <span class="hidden sm:inline">{{ item.title }}</span>
+                  <a href="{{ item_link | safe }}"
                      class="sm:hidden group gap-1 inline normal-case hover:text-primary transition-colors duration-300 ease-in-out"
                      target="_blank"
                      rel="noopener noreferrer">
-                    <span>{{ proj.title }}</span>
+                    <span>{{ item.title }}</span>
                     <svg class="inline-block w-4 h-4 translate-y-px shrink-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 24 24"
@@ -60,28 +60,28 @@
                     </svg>
                   </a>
                 {% else %}
-                  <span>{{ proj.title }}</span>
+                  <span>{{ item.title }}</span>
                 {% endif %}
-                {% if proj.category %}
-                  <div class="md:hidden mt-0.5 text-xs font-normal text-base-content/70">{{ proj.category }}</div>
+                {% if item.made_at %}
+                  <div class="md:hidden mt-0.5 text-xs font-normal text-base-content/70">{{ item.made_at }}</div>
                 {% endif %}
               </td>
-              <td class="hidden md:table-cell text-base-content/90 font-medium">{{ proj.category }}</td>
+              <td class="hidden md:table-cell text-base-content/90 font-medium">{{ item.made_at }}</td>
               <td class="hidden lg:table-cell">
                 <div class="flex flex-wrap gap-1.5">
-                  {% for tag in proj.tags %}
+                  {% for tag in item.tags %}
                     <span class="badge badge-primary badge-sm font-medium">{{ tag }}</span>
                   {% endfor %}
                 </div>
               </td>
               <td class="hidden sm:table-cell">
-                {% if proj_link %}
-                  <a href="{{ proj_link | safe }}"
+                {% if item_link %}
+                  <a href="{{ item_link | safe }}"
                      class="group gap-1 inline-flex items-center normal-case font-medium hover:text-primary transition-colors duration-300 ease-in-out"
                      target="_blank"
                      rel="noopener noreferrer"
-                     aria-label="{{ proj.title }}">
-                    <span>{{ proj.display_link | default(value="View") }}</span>
+                     aria-label="{{ item.title }}">
+                    <span>{{ item.display_link | default(value="View") }}</span>
                     <svg class="inline-block w-4 h-4 shrink-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                          xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 24 24"
