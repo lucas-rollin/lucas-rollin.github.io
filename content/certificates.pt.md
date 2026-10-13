@@ -16,7 +16,7 @@ tags = "Competências"
 year = 2024
 title = "CS50 Web"
 context = "Harvard"
-tags = ["Django | Python", "HTML", "CSS", "JavaScript"]
+tags = ["Python", "Django", "HTML", "CSS", "JavaScript"]
 url = "https://cs50.harvard.edu/certificates/7b5649b0-bff5-4366-bfcb-8a195180612b.pdf?size=letter"
 display_link = "cs50.harvard.edu"
 
