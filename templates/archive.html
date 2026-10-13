@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+  {% set cols = page.extra.columns %}
   <div class="max-w-7xl mx-auto px-4 py-8">
     <div class="mb-8">
       <a href="{% if lang == 'pt' %}/pt/{% else %}/{% endif %}"
@@ -27,9 +28,9 @@
         <thead class="text-base-content/80 backdrop-blur-sm lg:text-lg">
           <tr>
             <th class="w-16">{{ trans(key="year", lang=lang) }}</th>
-            <th>{{ trans(key="project", lang=lang) }}</th>
-            <th class="hidden md:table-cell">{{ trans(key="made_at", lang=lang) }}</th>
-            <th class="hidden lg:table-cell">{{ trans(key="built_with", lang=lang) }}</th>
+            <th>{{ cols.title }}</th>
+            <th class="hidden md:table-cell">{{ cols.context }}</th>
+            <th class="hidden lg:table-cell">{{ cols.tags }}</th>
             <th class="hidden sm:table-cell">Link</th>
           </tr>
         </thead>
@@ -62,11 +63,11 @@
                 {% else %}
                   <span>{{ item.title }}</span>
                 {% endif %}
-                {% if item.made_at %}
-                  <div class="md:hidden mt-0.5 text-xs font-normal text-base-content/70">{{ item.made_at }}</div>
+                {% if item.context %}
+                  <div class="md:hidden mt-0.5 text-xs font-normal text-base-content/70">{{ item.context }}</div>
                 {% endif %}
               </td>
-              <td class="hidden md:table-cell text-base-content/90 font-medium">{{ item.made_at }}</td>
+              <td class="hidden md:table-cell text-base-content/90 font-medium">{{ item.context }}</td>
               <td class="hidden lg:table-cell">
                 <div class="flex flex-wrap gap-1.5">
                   {% for tag in item.tags %}
