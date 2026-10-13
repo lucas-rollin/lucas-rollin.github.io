@@ -23,8 +23,8 @@
       <h1 class="text-3xl font-bold mt-2 text-base-content">{{ page.title }}</h1>
     </div>
     <div class="overflow-x-auto rounded-box border border-base-200">
-      <table class="table table-zebra w-full">
-        <thead class="bg-base-200/60 text-base-content/80 backdrop-blur-sm lg:text-lg">
+      <table class="table w-full">
+        <thead class="text-base-content/80 backdrop-blur-sm lg:text-lg">
           <tr>
             <th class="w-16">{{ trans(key="year", lang=lang) }}</th>
             <th>{{ trans(key="project", lang=lang) }}</th>
@@ -70,7 +70,7 @@
               <td class="hidden lg:table-cell">
                 <div class="flex flex-wrap gap-1.5">
                   {% for tag in item.tags %}
-                    <span class="badge badge-primary badge-sm font-medium">{{ tag }}</span>
+                    <span class="badge badge-primary badge-soft badge-sm font-medium">{{ tag }}</span>
                   {% endfor %}
                 </div>
               </td>
