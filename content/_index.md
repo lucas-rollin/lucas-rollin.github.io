@@ -34,21 +34,21 @@ url = "https://www.aresc.sc.gov.br/"
 date = "DEC 2024 — PRESENT"
 title = "Civil Engineer · ARESC"
 description = "Lead the Ombudsman module of a modular web app for a utilities regulator, and automate data routines that cut operational time by 40%. Also build Power BI dashboards for regulatory indicators."
-tags = ["Django | Python", "HTMX", "Alpine.js", "Tailwind CSS", "Apps Script", "Power BI", "Data Analysis"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "Tailwind CSS", "Power BI", "Apps Script"]
 
 [[extra.experience]]
 url = "https://lucas-rollin.github.io/"
 date = "NOV 2024 — FEB 2026"
 title = "Full-Stack Developer & Cost Estimator · Freelance"
 description = "Built Costplan, a cost estimation app for civil engineering, and delivered dashboards and automations for clients across industries."
-tags = ["Django | Python", "JavaScript", "SQL", "Power BI", "Cost Estimation"]
+tags = ["Python", "Django", "HTMX", "Alpine,js", "SQL", "Cost Estimation"]
 
 [[extra.experience]]
 url = "https://www.scgas.com.br/"
 date = "SEP 2023 — JUL 2024"
 title = "Planning & Market Intelligence Intern · SCGÁS"
 description = "Built Power BI dashboards for the piped gas project portfolio, mapped processes in BPMN, and used QGIS to identify potential customers."
-tags = ["Power BI", "Advanced Excel", "QGIS", "BPMN", "Data Analysis"]
+tags = ["Power BI", "Advanced Excel", "QGIS", "BPMN"]
 
 [[extra.experience]]
 url = "https://www.dacampos.com.br/"
@@ -87,7 +87,7 @@ logo = "/img/ufsc.png"
 title = "django-htmx-nav"
 description = "A Django + HTMX navigation library for declarative, server-driven partial updates, with an interactive benchmark comparing 8 architectural approaches and a comprehensive guide to HTMX navigation patterns."
 url = "https://lucas-rollin.github.io/django-htmx-nav/"
-tags = ["Django | Python", "HTMX", "Alpine.js", "ECharts", "CI/CD"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "CI/CD"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/django-htmx-nav.png"
@@ -98,7 +98,7 @@ caption = "A Python library for seamless server-driven navigation with Django an
 title = "Gas Tariff Regulatory Dashboard"
 description = "Developed a public Power BI dashboard for ARESC to track the Gas and Transport Price Adjustment Index (IRPGT) and the regulatory account balance under Resolution 73/2016."
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
-tags = ["Power BI", "DAX", "Power Query", "Data Visualization", "Public Regulation"]
+tags = ["Power BI", "DAX", "Power Query", "Public Regulation"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/conta-grafica.png"
@@ -109,7 +109,7 @@ caption = "Public dashboard for monitoring the IRPGT and regulatory account bala
 title = "Costplan"
 description = "Freelance cost estimation platform for gas distribution networks, grown from my CS50W capstone. The link points to the open-source foundation. Rebuilt with HTMX and Alpine.js after learning the limits of a vanilla-JS SPA in the capstone."
 url = "https://github.com/lucas-rollin/costplan-core"
-tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Cost Estimation"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "SQL", "Cost Estimation"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/costplan-dashboard.png"
@@ -125,7 +125,7 @@ caption = "Costplan Core, the open-source CS50W capstone"
 title = "Hardplan"
 description = "Web application for construction project scheduling with algorithms including the Critical Path Method (CPM) and Line of Balance (LOB)."
 url = "https://github.com/Harddus0/cs50fp"
-tags = ["Flask | Python", "SQL", "JavaScript", "Scheduling"]
+tags = ["Python", "Flask", "SQL", "JavaScript", "Algorithms"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/hardplan.jpg"

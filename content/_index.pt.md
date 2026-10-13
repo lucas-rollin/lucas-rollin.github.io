@@ -34,21 +34,21 @@ url = "https://www.aresc.sc.gov.br/"
 date = "DEZ 2024 — PRESENTE"
 title = "Engenheiro Civil · ARESC"
 description = "Lidero o módulo de Ouvidoria de uma aplicação web modular para uma agência reguladora e automatizo rotinas de dados, reduzindo o tempo operacional em 40%. Também desenvolvo dashboards em Power BI."
-tags = ["Django | Python", "HTMX", "Alpine.js", "Tailwind CSS", "Apps Script", "Power BI", "Análise de Dados"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "Tailwind CSS", "Power BI", "Apps Script"]
 
 [[extra.experience]]
 url = "https://lucas-rollin.github.io/"
 date = "NOV 2024 — FEV 2026"
 title = "Desenvolvedor Full-Stack e Orçamentista | Freelance"
 description = "Desenvolvi o Costplan, aplicação de orçamento para engenharia civil, e entreguei dashboards e automações para clientes de diversos segmentos."
-tags = ["Django | Python", "JavaScript", "SQL", "Power BI", "Orçamento"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "SQL", "Power BI", "Orçamento"]
 
 [[extra.experience]]
 url = "https://www.scgas.com.br/"
 date = "SET 2023 — JUL 2024"
 title = "Estagiário de Planejamento e Inteligência de Mercado · SCGÁS"
 description = "Criei dashboards em Power BI para a carteira de projetos de gás canalizado, mapeei processos em BPMN e usei QGIS para identificar clientes potenciais."
-tags = ["Power BI", "Excel Avançado", "QGIS", "BPMN", "Análise de Dados"]
+tags = ["Power BI", "Excel Avançado", "QGIS", "BPMN"]
 
 [[extra.experience]]
 url = "https://www.dacampos.com.br/"
@@ -88,7 +88,7 @@ logo = "/img/ufsc.png"
 title = "django-htmx-nav"
 description = "Uma biblioteca de navegação para Django + HTMX que permite atualizações parciais declarativas e orientadas pelo servidor, com um benchmark interativo comparando 8 abordagens arquiteturais e um guia completo sobre padrões de navegação com HTMX."
 url = "https://lucas-rollin.github.io/django-htmx-nav/"
-tags = ["Django | Python", "HTMX", "Alpine.js", "ECharts", "CI/CD"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "CI/CD"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/django-htmx-nav.png"
@@ -99,7 +99,7 @@ caption = "Biblioteca Python para navegação fluida orientada ao servidor com D
 title = "Dashboard da Conta Gráfica do Gás"
 description = "Painel público em Power BI para a ARESC acompanhar o Índice de Reajuste do Preço do Gás e do Transporte (IRPGT) e o saldo da conta gráfica, conforme a Resolução nº 73/2016."
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
-tags = ["Power BI", "DAX", "Power Query", "Visualização de Dados", "Setor Público"]
+tags = ["Power BI", "DAX", "Power Query", "Setor Público"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/conta-grafica.png"
@@ -110,7 +110,7 @@ caption = "Painel público de acompanhamento do IRPGT e do saldo da conta gráfi
 title = "Costplan"
 description = "Plataforma de estimativa de custos freelance para redes de distribuição de gás, desenvolvida a partir do meu projeto final do CS50W. O link direciona para a base em código aberto. Reconstruída com HTMX e Alpine.js após entender os limites de uma SPA em JavaScript puro no projeto final."
 url = "https://github.com/lucas-rollin/costplan-core"
-tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Orçamento"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "SQL", "SCSS", "Orçamento"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/costplan-dashboard.png"
@@ -126,7 +126,7 @@ caption = "Costplan Core, o projeto final em código aberto do CS50W"
 title = "Hardplan"
 description = "Aplicação web para gerenciamento de projetos de construção com algoritmos de agendamento como o Método do Caminho Crítico (CPM) e Linha de Balanço (LOB)."
 url = "https://github.com/Harddus0/cs50fp"
-tags = ["Flask | Python", "SQL", "JavaScript", "Planejamento"]
+tags = ["Python", "Flask", "SQL", "JavaScript", "Planejamento"]
 [[extra.projects.media]]
 type = "image"
 src = "/img/hardplan.jpg"

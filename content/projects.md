@@ -14,7 +14,7 @@ tags = "Built with"
 year = 2026
 title = "django-htmx-nav"
 context = "Open Source"
-tags = ["Django | Python", "HTMX", "Alpine.js", "ECharts", "CI/CD"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "CI/CD"]
 url = "https://lucas-rollin.github.io/django-htmx-nav/"
 display_link = "lucas-rollin.github.io"
 
@@ -22,7 +22,7 @@ display_link = "lucas-rollin.github.io"
 year = 2025
 title = "Gas Tariff Regulatory Dashboard"
 context = "ARESC"
-tags = ["Power BI", "DAX", "Power Query", "Data Analysis", "Public Regulation"]
+tags = ["Power BI", "DAX", "Power Query", "Public Regulation"]
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
 display_link = "aresc.sc.gov.br"
 
@@ -30,14 +30,14 @@ display_link = "aresc.sc.gov.br"
 year = 2025
 title = "Costplan"
 context = "Freelance"
-tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Cost Estimation"]
+tags = ["Python", "Django", "HTMX", "Alpine.js", "SQL", "Cost Estimation"]
 url = ""
 
 [[extra.items]]
 year = 2024
 title = "Costplan Core"
 context = "Harvard CS50 Web"
-tags = ["Django | Python", "JavaScript", "SQL", "SCSS", "Cost Estimation"]
+tags = ["Python", "Django", "JavaScript", "SQL", "Cost Estimation"]
 url = "https://github.com/lucas-rollin/costplan-core"
 display_link = "github.com"
 
@@ -61,7 +61,7 @@ display_link = "github.com"
 year = 2024
 title = "Hardplan"
 context = "Harvard CS50x"
-tags = ["Flask | Python", "SQL", "JavaScript", "Scheduling"]
+tags = ["Python", "Flask", "SQL", "JavaScript", "Algorithms"]
 url = "https://github.com/Harddus0/cs50fp"
 display_link = "github.com"
 +++
