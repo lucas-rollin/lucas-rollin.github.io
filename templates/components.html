@@ -1,14 +1,14 @@
-{% component ui.link_with_arrow(url, text, arrow_direction="top_right", underline=false, absolute=false) %}
+{% component ui.link_with_arrow(url, text, arrow_direction="top_right", underline=false, absolute=false, target="_blank") %}
   {% set words = text | split(pat=" ") %}
   <a href="{{ url }}"
-     target="_blank"
+     target="{{ target }}"
      class="inline group/link w-fit {% if absolute %} md:after:absolute md:after:inset-0 {% endif %}">
     <span class="{% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
       {% for word in words %}
         {% if loop.last %}
           <span class="inline-block whitespace-nowrap {% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
             {{ word }}
-            <svg class="inline-block w-5 h-5 translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %}  {% if underline %} group-hover/link:text-primary {% endif %}"
+            <svg class="inline-block w-5 h-5 translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %} {% if underline %} group-hover/link:text-primary {% endif %}"
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
                  fill="none"
