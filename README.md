@@ -1,15 +1,23 @@
 # Lucas Rollin Ferreira · Portfolio
 
-The personal portfolio and resume website of **Lucas Rollin Ferreira** (Civil Engineer, Full-Stack Developer, and Data Analyst), accessible at [lucas-rollin.github.io](https://lucas-rollin.github.io/).
+The personal portfolio and resume website of **Lucas Rollin Ferreira** (Full-Stack Developer, Data Analyst and Civil Engineer), accessible at [lucas-rollin.github.io](https://lucas-rollin.github.io/).
 
 ## Contents
 
-- [Architecture & Technology Stack](#architecture--technology-stack)
-- [Project Structure](#project-structure)
-- [Development](#development)
-- [Code Quality & Linting](#code-quality--linting)
-- [Content Updates](#content-updates)
-- [Deployment](#deployment)
+- [Lucas Rollin Ferreira · Portfolio](#lucas-rollin-ferreira--portfolio)
+  - [Contents](#contents)
+  - [Architecture \& Technology Stack](#architecture--technology-stack)
+  - [Project Structure](#project-structure)
+  - [Development](#development)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Local Development](#local-development)
+    - [Building for Production](#building-for-production)
+  - [Code Quality \& Linting](#code-quality--linting)
+    - [JavaScript (Biome)](#javascript-biome)
+    - [Templates (djlint via uv)](#templates-djlint-via-uv)
+  - [Content Updates](#content-updates)
+  - [Deployment](#deployment)
 
 ## Architecture & Technology Stack
 

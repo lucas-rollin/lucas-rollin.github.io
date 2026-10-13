@@ -32,7 +32,7 @@ project = "Project"
 made_at = "Made at"
 resume_url = "/pdf/resume.pdf"
 view_resume = "View Full Resume"
-view_certificates = "View Certificates"
+view_certificates = "View All Certificates"
 view_projects = "View Full Project Archive"
 
 [languages.pt]
@@ -53,7 +53,7 @@ project = "Projeto"
 made_at = "Contexto"
 resume_url = "/pdf/curriculo.pdf"
 view_resume = "Ver currículo completo"
-view_certificates = "Ver certificados"
+view_certificates = "Ver todos os certificados"
 view_projects = "Ver arquivo completo de projetos"
 
 [extra]
