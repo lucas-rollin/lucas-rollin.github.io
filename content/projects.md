@@ -22,11 +22,19 @@ url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
 display_link = "aresc.sc.gov.br"
 
 [[extra.projects]]
-year = 2024
+year = 2025
 title = "Costplan"
 category = "Freelance"
-tags = ["Django | Python", "JavaScript", "SQL", "HTML", "SCSS", "Cost Estimation"]
+tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Cost Estimation"]
 url = ""
+
+[[extra.projects]]
+year = 2024
+title = "Costplan Core"
+category = "Harvard CS50"
+tags = ["Django | Python", "JavaScript", "SQL", "SCSS", "Cost Estimation"]
+url = "https://github.com/lucas-rollin/costplan-core"
+display_link = "github.com"
 
 [[extra.projects]]
 year = 2024

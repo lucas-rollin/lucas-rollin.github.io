@@ -108,14 +108,19 @@ caption = "Public dashboard for monitoring the IRPGT and regulatory account bala
 
 [[extra.projects]]
 title = "Costplan"
-description = "Web application for civil engineering project cost estimation, enabling the creation of Unit Price Spreadsheets (UPS) based on predefined cost compositions and a structured input database."
-url = ""
-tags = ["Django | Python", "JavaScript", "SQL", "HTML", "SCSS", "Cost Estimation"]
+description = "Freelance cost estimation platform for gas distribution networks, grown from my CS50W capstone. The link points to the open-source foundation. Rebuilt with HTMX and Alpine.js after learning the limits of a vanilla-JS SPA in the capstone."
+url = "https://github.com/lucas-rollin/costplan-core"
+tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Cost Estimation"]
 [[extra.projects.media]]
 type = "image"
-src = "/img/costplan.png"
-alt = "Costplan application interface showcasing unit price spreadsheets and construction cost tables."
-caption = "Unit price spreadsheet management in Costplan"
+src = "/img/costplan-dashboard.png"
+alt = "Costplan Dashboard interface showcasing ABC curve and aggregation charts."
+caption = "Costplan production app dashboard"
+[[extra.projects.media]]
+type = "image"
+src = "/img/costplan-core.png"
+alt = "Costplan Core application interface showcasing unit price spreadsheets and construction cost tables."
+caption = "Costplan Core, the open-source CS50W capstone"
 
 [[extra.projects]]
 title = "Hardplan"

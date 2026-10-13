@@ -109,14 +109,19 @@ caption = "Painel público de acompanhamento do IRPGT e do saldo da conta gráfi
 
 [[extra.projects]]
 title = "Costplan"
-description = "Aplicação web para o orçamento projetos de engenharia civil com criação de Planilhas de Preços Unitários (PPU) com base em Composições de Custos predefinidas."
-url = ""
-tags = ["Django | Python", "JavaScript", "SQL", "HTML", "SCSS", "Orçamento"]
+description = "Plataforma de estimativa de custos freelance para redes de distribuição de gás, desenvolvida a partir do meu projeto final do CS50W. O link direciona para a base em código aberto. Reconstruída com HTMX e Alpine.js após entender os limites de uma SPA em JavaScript puro no projeto final."
+url = "https://github.com/lucas-rollin/costplan-core"
+tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Orçamento"]
 [[extra.projects.media]]
 type = "image"
-src = "/img/costplan.png"
-alt = "Interface da aplicação Costplan exibindo planilhas de preços unitários e tabelas de custos de construção."
-caption = "Visualização de planilhas de preços unitários no Costplan"
+src = "/img/costplan-dashboard.png"
+alt = "Interface do painel do Costplan exibindo curva ABC e gráficos de agregação."
+caption = "Painel do aplicativo Costplan em produção"
+[[extra.projects.media]]
+type = "image"
+src = "/img/costplan-core.png"
+alt = "Interface da aplicação Costplan Core exibindo planilhas de preços unitários e tabelas de custos de construção."
+caption = "Costplan Core, o projeto final em código aberto do CS50W"
 
 [[extra.projects]]
 title = "Hardplan"
