@@ -29,9 +29,18 @@ url = "https://github.com/lucas-rollin/docs-site"
 display_link = "github.com"
 
 [[extra.items]]
+year = 2026
+title = "HTMX Invaders"
+description = "Jogo de navegador onde o HTMX defende a web do JS"
+context = "UNINTER"
+tags = ["Python", "pygame-ce", "WebAssembly"]
+url = "https://lucas-rollin.github.io/htmx-invaders/"
+display_link = "lucas-rollin.github.io"
+
+[[extra.items]]
 year = 2025
 title = "Dashboard da Conta Gráfica do Gás"
-description = "Painel do IRPGT e saldo da conta gráfica (ARESC)"
+description = "Painel do IRPGT e saldo da conta gráfica"
 context = "ARESC"
 tags = ["Power BI", "DAX", "Power Query"]
 url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
