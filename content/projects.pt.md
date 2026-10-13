@@ -25,14 +25,14 @@ display_link = "aresc.sc.gov.br"
 year = 2025
 title = "Costplan"
 category = "Freelance"
-tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Cost Estimation"]
+tags = ["Django | Python", "HTMX", "Alpine.js", "SQL", "SCSS", "Orçamento"]
 url = ""
 
 [[extra.projects]]
 year = 2024
 title = "Costplan Core"
 category = "Harvard CS50"
-tags = ["Django | Python", "JavaScript", "SQL", "SCSS", "Cost Estimation"]
+tags = ["Django | Python", "JavaScript", "SQL", "SCSS", "Orçamento"]
 url = "https://github.com/lucas-rollin/costplan-core"
 display_link = "github.com"
 
