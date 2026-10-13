@@ -25,7 +25,7 @@ social = [
 # About section
 about_paragraphs = [
   "I started as a civil engineer, and that background still shapes how I build software: understand the process, find where time is lost, then automate it. The goal is always a tool people use every day, whether it's a scheduling algorithm for construction or a platform running in production at a regulator.",
-  "My core stack is <span class=\"tech\">Django</span> and <span class=\"tech\">HTMX</span> for server-driven apps, with <span class=\"tech\">Python</span> and <span class=\"tech\">Power BI</span> on the data side, which led to <a href=\"https://lucas-rollin.github.io/django-htmx-nav/\" target=\"_blank\" class=\"link-custom\">django-htmx-nav</a>. I'm now widening that range with <span class=\"tech\">Astro</span> and <span class=\"tech\">TypeScript</span> for static, data-driven sites, and <span class=\"tech\">FastAPI</span> with <span class=\"tech\">React</span> for decoupled architectures."
+  "I choose the architecture to fit the problem. <span class=\"tech\">Django</span> and <span class=\"tech\">HTMX</span> for dependable internal platforms, a <span class=\"tech\">Python</span> pipeline feeding a static <span class=\"tech\">Astro</span> site when no server is needed, and a <span class=\"tech\">React</span> + <span class=\"tech\">TypeScript</span> frontend over a decoupled API when the interface is a product of its own, which I explored by building the same API in both <span class=\"tech\">Django REST Framework</span> and <span class=\"tech\">FastAPI</span>. See <a href=\"#projects\" class=\"link-custom\">the projects below</a>."
 ]
 
 # Experience section

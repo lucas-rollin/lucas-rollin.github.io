@@ -25,7 +25,7 @@ social = [
 # Seção Sobre - Strings multilinha preservando HTML interno
 about_paragraphs = [
   "Comecei na engenharia civil, e essa formação ainda molda como desenvolvo software: entender o processo, achar onde o tempo se perde e automatizar. O foco sempre é uma ferramenta que as pessoas usem no dia a dia, seja um algoritmo de planejamento de obras ou uma rotina de dados para uma agência reguladora.",
-  "Minha principal stack é <span class=\"tech\">Django</span> e <span class=\"tech\">HTMX</span> para aplicações web orientadas pelo servidor, com <span class=\"tech\">Python</span> e <span class=\"tech\">Power BI</span> na parte dos dados, o que levou ao <a href=\"https://lucas-rollin.github.io/django-htmx-nav/\" target=\"_blank\" class=\"link-custom\">django-htmx-nav</a>. Agora estou ampliando este horizonte com <span class=\"tech\">Astro</span> e <span class=\"tech\">TypeScript</span> para sites estáticos orientados por dados, e <span class=\"tech\">FastAPI</span> com <span class=\"tech\">React</span> para arquitetura desaclopada."
+  "Escolho a arquitetura conforme o problema. <span class=\"tech\">Django</span> e <span class=\"tech\">HTMX</span> para plataformas internas confiáveis, um pipeline em <span class=\"tech\">Python</span> alimentando um site estático em <span class=\"tech\">Astro</span> quando não é preciso servidor, e um front-end em <span class=\"tech\">React</span> + <span class=\"tech\">TypeScript</span> sobre uma API desacoplada quando a interface é um produto à parte, o que explorei implementando a mesma API em <span class=\"tech\">Django REST Framework</span> e <span class=\"tech\">FastAPI</span>. Veja <a href=\"#projects\" class=\"link-custom\">os projetos abaixo</a>."
 ]
 
 # Seção Experiência
