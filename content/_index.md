@@ -124,7 +124,7 @@ caption = "Costplan Core, the open-source CS50W capstone"
 [[extra.projects]]
 title = "Hardplan"
 description = "Web application for construction project scheduling with algorithms including the Critical Path Method (CPM) and Line of Balance (LOB)."
-url = "https://github.com/Harddus0/cs50fp"
+url = "https://github.com/lucas-rollin/hardplan"
 tags = ["Python", "Flask", "SQL", "JavaScript", "Algorithms"]
 [[extra.projects.media]]
 type = "image"

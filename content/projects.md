@@ -69,7 +69,7 @@ title = "Hardplan ERP"
 description = "Data modeling of a civil construction ERP"
 context = "Harvard CS50 SQL"
 tags = ["SQL"]
-url = "https://github.com/Harddus0/cs50sql"
+url = "https://github.com/lucas-rollin/hardplan-erp"
 display_link = "github.com"
 
 [[extra.items]]
@@ -78,7 +78,7 @@ title = "Budgetpy"
 description = "CLI for cost estimation based on SINAPI"
 context = "Harvard CS50P"
 tags = ["Python"]
-url = "https://github.com/Harddus0/cs50p"
+url = "https://github.com/lucas-rollin/budgetpy"
 display_link = "github.com"
 
 [[extra.items]]
@@ -87,6 +87,6 @@ title = "Hardplan"
 description = "Construction project scheduling in CPM and LOB"
 context = "Harvard CS50x"
 tags = ["Python", "Flask", "SQL", "JavaScript"]
-url = "https://github.com/Harddus0/cs50fp"
+url = "https://github.com/lucas-rollin/hardplan"
 display_link = "github.com"
 +++

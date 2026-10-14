@@ -69,7 +69,7 @@ title = "Hardplan ERP"
 description = "Modelagem de banco de dados para ERP de obras"
 context = "Harvard CS50 SQL"
 tags = ["SQL"]
-url = "https://github.com/Harddus0/cs50sql"
+url = "https://github.com/lucas-rollin/hardplan-erp"
 display_link = "github.com"
 
 [[extra.items]]
@@ -78,7 +78,7 @@ title = "Budgetpy"
 description = "CLI para estimativa de custos via base SINAPI"
 context = "Harvard CS50P"
 tags = ["Python"]
-url = "https://github.com/Harddus0/cs50p"
+url = "https://github.com/lucas-rollin/budgetpy"
 display_link = "github.com"
 
 [[extra.items]]
@@ -87,6 +87,6 @@ title = "Hardplan"
 description = "Planejamento de obras com algoritmos CPM e LOB"
 context = "Harvard CS50x"
 tags = ["Python", "Flask", "SQL", "JavaScript"]
-url = "https://github.com/Harddus0/cs50fp"
+url = "https://github.com/lucas-rollin/hardplan"
 display_link = "github.com"
 +++

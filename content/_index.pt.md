@@ -125,7 +125,7 @@ caption = "Costplan Core, o projeto final em código aberto do CS50W"
 [[extra.projects]]
 title = "Hardplan"
 description = "Aplicação web para gerenciamento de projetos de construção com algoritmos de agendamento como o Método do Caminho Crítico (CPM) e Linha de Balanço (LOB)."
-url = "https://github.com/Harddus0/cs50fp"
+url = "https://github.com/lucas-rollin/hardplan"
 tags = ["Python", "Flask", "SQL", "JavaScript", "Planejamento"]
 [[extra.projects.media]]
 type = "image"
