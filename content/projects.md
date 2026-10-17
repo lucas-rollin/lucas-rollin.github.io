@@ -34,8 +34,8 @@ title = "HTMX Invaders"
 description = "Browser game where HTMX defends the web from JS"
 context = "UNINTER"
 tags = ["Python", "pygame-ce", "WebAssembly"]
-url = "https://lucas-rollin.github.io/htmx-invaders/"
-display_link = "lucas-rollin.github.io"
+url = "https://github.com/lucas-rollin/htmx-invaders"
+display_link = "github.com"
 
 [[extra.items]]
 year = 2025
