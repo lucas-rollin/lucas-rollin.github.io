@@ -49,8 +49,8 @@ url = ""
 
 [[extra.items]]
 year = 2025
-title = "MMO Theorycrafting Sheets"
-description = "Theorycrafting baseada em dados de ESO and GW2"
+title = "Planilhas de Theorycrafting de MMO"
+description = "Teorização de ESO e GW2 baseada em dados"
 context = "Hobby"
 tags = [ "Google Sheets"]
 url = "/mmo-theorycrafting/pt/"
