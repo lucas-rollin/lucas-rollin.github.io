@@ -61,6 +61,6 @@ view_projects = "Ver arquivo completo de projetos"
 nav_links = [
   { href = "about",      label = "about" },
   { href = "experience", label = "experience" },
-  { href = "education",   label = "education" },
+  { href = "education",  label = "education" },
   { href = "projects",   label = "projects" },
 ]

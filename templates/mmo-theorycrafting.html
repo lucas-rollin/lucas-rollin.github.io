@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+  {% set e = page.extra %}
+  {% set l = e.labels %}
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <header class="mb-12 space-y-4">
+      {% set project_url = "/projects/" %}
+      {% if lang == "pt" %}
+        {% set project_url = "/pt/projects/" %}
+      {% endif %}
+      {{ <ui.link_with_arrow url={project_url} text={l.back} arrow_direction="left" underline={true} target="_self" size="lg" /> }}
+      <h1 class="text-3xl font-bold text-base-content">{{ page.title }}</h1>
+      <p class="max-w-3xl text-lg text-base-content/80">{{ e.intro }}</p>
+      <div class="flex flex-wrap gap-1.5">
+        {% for tag in e.tags %}
+          <span class="badge badge-primary badge-soft badge-sm font-medium">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </header>
+    <div class="space-y-16">
+      {% for wb in e.workbooks %}
+        <section aria-labelledby="workbook-{{ loop.index }}" class="space-y-5">
+          <div class="space-y-1">
+            <div class="flex flex-wrap gap-x-3 text-sm text-base-content/70">
+              <span class="font-mono font-medium">{{ wb.year }}</span>
+              <span>{{ wb.type }}</span>
+            </div>
+            <h2 id="workbook-{{ loop.index }}"
+                class="text-2xl font-bold text-base-content">{{ wb.title }}</h2>
+            <p class="max-w-3xl text-base-content/80">{{ wb.description }}</p>
+          </div>
+          {% if wb.image %}
+            <figure class="space-y-2">
+              <a href="{{ get_url(path=wb.image) }}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="{{ l.open_image }}"
+                 class="block overflow-hidden rounded-box border border-base-200 hover:border-primary transition-colors duration-300">
+                <img src="{{ get_url(path=wb.image) }}"
+                     alt="{{ wb.image_alt }}"
+                     loading="lazy"
+                     class="block h-auto w-full">
+              </a>
+              {% if wb.caption %}
+                <figcaption class="text-sm text-base-content/70">{{ wb.caption }}</figcaption>
+              {% endif %}
+            </figure>
+          {% endif %}
+          <ul class="max-w-3xl list-disc space-y-1 pl-5 text-base-content/90">
+            {% for feature in wb.features %}
+              <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+          {{ <ui.link_with_arrow url={wb.url} text={l.open} underline={true} size="lg" /> }}
+        </section>
+      {% endfor %}
+      <section aria-labelledby="method-heading" class="space-y-3">
+        <h2 id="method-heading" class="text-2xl font-bold text-base-content">{{ l.methodology }}</h2>
+        <div class="max-w-3xl space-y-3 text-base-content/80">
+          {% for paragraph in e.methodology %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+        </div>
+      </section>
+      <section aria-labelledby="notes-heading"
+               class="space-y-2 border-t border-base-300 pt-6">
+        <h2 id="notes-heading" class="text-lg font-bold text-base-content">{{ l.notes }}</h2>
+        <ul class="max-w-3xl list-disc space-y-1 pl-5 text-sm text-base-content/70">
+          {% for note in e.notes %}
+            <li>{{ note }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  </div>
+{% endblock content %}

@@ -48,6 +48,15 @@ tags = [ "Python", "Django", "HTMX", "Alpine.js", "SQL"]
 url = ""
 
 [[extra.items]]
+year = 2025
+title = "MMO Theorycrafting Sheets"
+description = "Theorycrafting baseada em dados de ESO and GW2"
+context = "Hobby"
+tags = [ "Google Sheets"]
+url = "/mmo-theorycrafting/pt/"
+display_link = "lucas-rollin.github.io"
+
+[[extra.items]]
 year = 2024
 title = "Costplan Core"
 description = "Orçamento de obras e composições de custos"

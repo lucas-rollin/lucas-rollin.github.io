@@ -41,6 +41,16 @@ display_link = "aresc.sc.gov.br"
 
 [[extra.items]]
 year = 2025
+title = "MMO Theorycrafting Sheets"
+description = "Data-driven ESO and GW2 theorycrafting"
+context = "Hobby"
+tags = [ "Google Sheets"]
+url = "/mmo-theorycrafting/"
+display_link = "lucas-rollin.github.io"
+target = "_self"
+
+[[extra.items]]
+year = 2025
 title = "Costplan"
 description = "Cost estimation for gas distribution networks"
 context = "Freelance"
