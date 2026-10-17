@@ -63,7 +63,7 @@ url = "https://www.uninter.com/graduacao/a-distancia/tecnologia-em-analise-e-des
 degree = "Technologist in Systems Analysis and Development"
 date = "2025 — 2028"
 description = "Full merit-based scholarship (100%) through national exam (ENEM) performance."
-logo = "/img/uninter.png"
+logo = "/img/education/uninter.png"
 
 [[extra.education]]
 institution = "Harvard University"
@@ -71,7 +71,7 @@ url = "https://cs50.harvard.edu/x/"
 degree = "CS50 — Computer Science Courses"
 date = "JUL 2024 — DEC 2024"
 description = "5 concluded certifications: CS50x, CS50 Python, CS50 SQL, CS50 Web and CS50 AI."
-logo = "/img/harvard.png"
+logo = "/img/education/harvard.png"
 
 [[extra.education]]
 institution = "Federal University of Santa Catarina (UFSC)"
@@ -79,7 +79,7 @@ url = "https://ufsc.br/"
 degree = "B.Sc. in Civil Engineering"
 date = "2017 — 2024"
 description = "GPA: 8.8/10.0."
-logo = "/img/ufsc.png"
+logo = "/img/education/ufsc.png"
 
 [[extra.projects]]
 title = "django-htmx-nav"
@@ -88,7 +88,7 @@ url = "https://lucas-rollin.github.io/django-htmx-nav/"
 tags = [ "Python", "Django", "HTMX", "Alpine.js", "CI/CD"]
 [[extra.projects.media]]
 type = "image"
-src = "/img/django-htmx-nav.png"
+src = "/img/projects/django-htmx-nav.png"
 alt = "Social preview for django-htmx-nav, showing a Python library for server-driven navigation in HTMX with Django, complete with a code snippet and installation command."
 caption = "A Python library for seamless server-driven navigation with Django and HTMX"
 
@@ -100,7 +100,7 @@ url = "https://aresc.sc.gov.br/conta-grafica-power-bi/"
 tags = [ "Power BI", "DAX", "Power Query", "Public Regulation"]
 [[extra.projects.media]]
 type = "image"
-src = "/img/conta-grafica.png"
+src = "/img/projects/conta-grafica.png"
 alt = "Power BI dashboard displaying IRPGT trends, regulatory account balance, and related indicators."
 caption = "Public dashboard for monitoring the IRPGT and regulatory account balance"
 
@@ -112,13 +112,13 @@ url = "https://github.com/lucas-rollin/costplan-core"
 tags = [ "Python", "Django", "HTMX", "Alpine.js", "SQL", "Cost Estimation"]
 [[extra.projects.media]]
 type = "image"
-src = "/img/costplan-dashboard.png"
+src = "/img/projects/costplan-dashboard.png"
 alt = "Costplan Dashboard interface showcasing ABC curve and aggregation charts."
 caption = "Costplan production app dashboard"
 
 [[extra.projects.media]]
 type = "image"
-src = "/img/costplan-core.png"
+src = "/img/projects/costplan-core.png"
 alt = "Costplan Core application interface showcasing unit price spreadsheets and construction cost tables."
 caption = "Costplan Core, the open-source CS50W capstone"
 
@@ -130,7 +130,7 @@ url = "https://github.com/lucas-rollin/hardplan"
 tags = [ "Python", "Flask", "SQL", "JavaScript", "Algorithms"]
 [[extra.projects.media]]
 type = "image"
-src = "/img/hardplan.jpg"
+src = "/img/projects/hardplan.jpg"
 alt = "Hardplan app interface in the Line of Balance scheduling view, illustrating a 10-story building timeline from structure to finishing."
 caption = "Line of Balance scheduling view"
 +++
