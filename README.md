@@ -6,14 +6,14 @@ The personal portfolio and resume website of **Lucas Rollin Ferreira** (Full-Sta
 
 - [Lucas Rollin Ferreira · Portfolio](#lucas-rollin-ferreira--portfolio)
   - [Contents](#contents)
-  - [Architecture \& Technology Stack](#architecture--technology-stack)
+  - [Architecture & Technology Stack](#architecture--technology-stack)
   - [Project Structure](#project-structure)
   - [Development](#development)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Local Development](#local-development)
     - [Building for Production](#building-for-production)
-  - [Code Quality \& Linting](#code-quality--linting)
+  - [Code Quality & Linting](#code-quality--linting)
     - [JavaScript (Biome)](#javascript-biome)
     - [Templates (djlint via uv)](#templates-djlint-via-uv)
   - [Content Updates](#content-updates)
@@ -109,11 +109,13 @@ Runs the full production build (CSS, JS, then `zola build`) into `./public`. See
 ### JavaScript (Biome)
 
 Check for errors and formatting issues:
+
 ```bash
 npx @biomejs/biome check .
 ```
 
 Automatically apply formatting and organize imports:
+
 ```bash
 npx @biomejs/biome check --write .
 ```
@@ -121,11 +123,13 @@ npx @biomejs/biome check --write .
 ### Templates (djlint via uv)
 
 Check Tera template syntax and HTML structure:
+
 ```bash
 uv run djlint --lint .
 ```
 
 Format templates according to indentation rules:
+
 ```bash
 uv run djlint --reformat .
 ```
