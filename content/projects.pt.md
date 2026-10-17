@@ -53,7 +53,7 @@ title = "Planilhas de Theorycrafting de MMO"
 description = "Teorização de ESO e GW2 baseada em dados"
 context = "Hobby"
 tags = [ "Google Sheets"]
-url = "/mmo-theorycrafting/pt/"
+url = "/pt/mmo-theorycrafting/"
 display_link = "lucas-rollin.github.io"
 
 [[extra.items]]
