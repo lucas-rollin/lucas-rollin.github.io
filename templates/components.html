@@ -1,37 +1,57 @@
-{% component ui.link_with_arrow(url, text, arrow_direction="top_right", underline=false, absolute=false, target="_blank") %}
-  {% set words = text | split(pat=" ") %}
-  <a href="{{ url }}"
-     target="{{ target }}"
-     class="inline group/link w-fit {% if absolute %} md:after:absolute md:after:inset-0 {% endif %}">
-    <span class="{% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
-      {% for word in words %}
-        {% if loop.last %}
-          <span class="inline-block whitespace-nowrap {% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
+{% component ui.link_with_arrow(url, text, arrow_direction="top_right", underline=false, absolute=false, target="_blank", size="md") %}
+  {% if arrow_direction == "left" %}
+    <a href="{{ url }}"
+       target="{{ target }}"
+       class="inline-flex items-center gap-1 group/link w-fit {% if size == 'lg' %} text-lg {% endif %} {% if absolute %} md:after:absolute md:after:inset-0 {% endif %}">
+      <svg class="inline-block {% if size == 'sm' %} w-4 h-4 {% else %} w-5 h-5 {% endif %} translate-y-px shrink-0 transition-transform duration-300 ease-in-out group-hover/link:-translate-x-1.5 {% if underline %} group-hover/link:text-primary {% endif %}"
+           xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="2"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           aria-hidden="true">
+        <path d="m12 19-7-7 7-7" />
+        <path d="M19 12H5" />
+      </svg>
+      <span class="{% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">{{ text }}</span>
+    </a>
+  {% else %}
+    {% set words = text | split(pat=" ") %}
+    <a href="{{ url }}"
+       target="{{ target }}"
+       class="inline group/link w-fit {% if size == 'lg' %} text-lg {% endif %} {% if absolute %} md:after:absolute md:after:inset-0 {% endif %}">
+      <span class="{% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
+        {% for word in words %}
+          {% if loop.last %}
+            <span class="inline-block whitespace-nowrap {% if underline %} underline decoration-transparent decoration-2 underline-offset-4 transition duration-300 ease-in-out group-hover/link:decoration-info {% endif %}">
+              {{ word }}
+              <svg class="inline-block {% if size == 'sm' %} w-4 h-4 {% else %} w-5 h-5 {% endif %} translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %} {% if underline %} group-hover/link:text-primary {% endif %}"
+                   xmlns="http://www.w3.org/2000/svg"
+                   viewBox="0 0 24 24"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   aria-hidden="true">
+                {% if arrow_direction == "top_right" %}
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                {% else %}
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                {% endif %}
+              </svg>
+            </span>
+          {% else %}
             {{ word }}
-            <svg class="inline-block w-5 h-5 translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %} {% if underline %} group-hover/link:text-primary {% endif %}"
-                 xmlns="http://www.w3.org/2000/svg"
-                 viewBox="0 0 24 24"
-                 fill="none"
-                 stroke="currentColor"
-                 stroke-width="2"
-                 stroke-linecap="round"
-                 stroke-linejoin="round"
-                 aria-hidden="true">
-              {% if arrow_direction == "top_right" %}
-                <path d="M7 7h10v10" />
-                <path d="M7 17 17 7" />
-              {% else %}
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              {% endif %}
-            </svg>
-          </span>
-        {% else %}
-          {{ word }}
-        {% endif %}
-      {% endfor %}
-    </span>
-  </a>
+          {% endif %}
+        {% endfor %}
+      </span>
+    </a>
+  {% endif %}
 {% endcomponent %}
 {% component ui.experience_block(url, date, title, description, tags) %}
   <div class="dim-item relative block lg:flex gap-4 p-4 rounded-lg transition duration-300 ease-in-out md:hover:bg-base-200">
