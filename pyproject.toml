@@ -15,3 +15,4 @@ package = false
 [tool.djlint]
 profile = "tera"
 indent = 2
+exclude = "public/"
