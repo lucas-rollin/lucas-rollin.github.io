@@ -13,7 +13,7 @@ The personal portfolio and resume website of **Lucas Rollin Ferreira** (Full-Sta
     - [Installation](#installation)
     - [Commands Overview](#commands-overview)
   - [Content Updates](#content-updates)
-  - [Deployment](#deployment)
+  - [CI/CD \& Deployment](#cicd--deployment)
 
 ## Architecture & Technology Stack
 
@@ -38,7 +38,9 @@ This project is built as an accessible and lightweight static site:
 
 ```text
 .
-├── .github/workflows/deploy.yml  # Automated build and GitHub Pages deployment
+├── .github/workflows/
+│   ├── ci.yml                    # Automated code quality checks & build validation
+│   └── deploy.yml                # Automated build and GitHub Pages deployment
 ├── content/                      # Content and data files (TOML frontmatter)
 │   ├── _index.md                 # homepage (about, experience, projects)
 │   ├── certificates.md           # certificates dataset
@@ -96,6 +98,7 @@ uv sync
 | **Lint & Format JS** | `npx @biomejs/biome check --write .` |
 | **Lint Templates** | `uv run djlint --reformat .` |
 | **Format Markdown** | `uv run mdformat content/` |
+| **Run CI Checks** | `npm run check` |
 
 ## Content Updates
 
@@ -104,6 +107,9 @@ uv sync
 - **Adding Project or Certificate:** Add a `[[extra.item]]` entry in `content/certificates.md` or `content/projects.md` and related portuguese files.
 - **Translations:** Add or update translation strings in `zola.toml` under `[languages.en.translations]` and `[languages.pt.translations]`.
 
-## Deployment
+## CI/CD & Deployment
 
-Deployments are fully automated. Pushing any commit to `main` triggers [.github/workflows/deploy.yml](.github/workflows/deploy.yml), which builds the project and deploys `./public` to GitHub Pages.
+The repository uses two automated GitHub Actions workflows:
+
+1. **[CI Checks (`ci.yml`)](.github/workflows/ci.yml):** Runs on every pull request and push (through deploy) to validate formatting, template syntax, markdown compliance, and successful site compilation.
+2. **[Deployment (`deploy.yml`)](.github/workflows/deploy.yml):** Triggers automatically on pushes to `main`, building the site and deploying `./public` to GitHub Pages.

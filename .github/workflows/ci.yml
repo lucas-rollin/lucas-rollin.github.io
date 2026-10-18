@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx biome ci .
+
+  lint-templates-and-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run djlint --check --lint .
+      - run: uv run mdformat --check content/
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.23.6
+      - run: npm run build:site
+      - run: zola check --skip-external-links
