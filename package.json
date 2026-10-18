@@ -8,11 +8,12 @@
     "build:site": "npm run build:css && npm run build:js && zola build",
     "watch:css": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/output.css --watch",
     "watch:js": "esbuild ./static/js/entry.js --bundle --outfile=static/js/data.min.js --watch",
-    "watch": "npm run watch:css & npm run watch:js & zola serve"
+    "watch": "npm run watch:css & npm run watch:js & zola serve",
+    "check": "npx biome check . && uv run djlint --lint --check . && uv run mdformat --check content/ && npm run build:site"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
-    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/cli": "^4.3.0",
     "daisyui": "^5.7.46",
     "esbuild": "^0.28.2",
     "tailwindcss": "^4.3.3"
