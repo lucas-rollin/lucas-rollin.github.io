@@ -54,7 +54,8 @@ description = "Data-driven ESO and GW2 theorycrafting"
 context = "Hobby"
 tags = [ "Google Sheets"]
 url = "/mmo-theorycrafting/"
-display_link = "lucas-rollin.github.io"
+display_link = "View page"
+internal = true
 
 [[extra.items]]
 year = 2024

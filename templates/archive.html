@@ -72,7 +72,13 @@
               </td>
               <td class="hidden sm:table-cell">
                 {% if item_link %}
-                  {{ <ui.link_with_arrow url={item.url} text={item.display_link} transition="text_color" size="sm" /> }}
+                  {% set arrow = "top_right" %}
+                  {% set link_target = "_blank" %}
+                  {% if item.internal %}
+                    {% set arrow = "right" %}
+                    {% set link_target = "_self" %}
+                  {% endif %}
+                  {{ <ui.link_with_arrow url={item.url} text={item.display_link} arrow_direction={arrow} transition="text_color" target={link_target} size="sm" /> }}
                 {% else %}
                   <span class="text-base-content/40">—</span>
                 {% endif %}
