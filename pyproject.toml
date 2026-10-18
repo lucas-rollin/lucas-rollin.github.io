@@ -5,6 +5,8 @@ description = "Portfolio"
 requires-python = ">=3.14"
 dependencies = [
     "djlint>=1.46.2",
+    "mdformat>=1.0.0",
+    "mdformat-zola>=1.0.0",
 ]
 
 [tool.uv]
