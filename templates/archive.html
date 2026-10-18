@@ -7,7 +7,7 @@
       {% if lang == "pt" %}
         {% set home_url = "/pt/" %}
       {% endif %}
-      {{ <ui.link_with_arrow url={home_url} text={page.extra.name} arrow_direction="left" underline={true} target="_self" size="lg" /> }}
+      {{ <ui.link_with_arrow url={home_url} text={page.extra.name} arrow_direction="left" transition="underline" target="_self" size="lg" /> }}
       <h1 class="text-3xl font-bold mt-2 text-base-content">{{ page.title }}</h1>
     </div>
     <div class="overflow-x-auto rounded-box border border-base-200">
@@ -72,25 +72,7 @@
               </td>
               <td class="hidden sm:table-cell">
                 {% if item_link %}
-                  <a href="{{ item_link | safe }}"
-                     class="group gap-1 inline-flex items-center normal-case font-medium hover:text-primary transition-colors duration-300 ease-in-out"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     aria-label="{{ item.title }}">
-                    <span>{{ item.display_link | default(value="View") }}</span>
-                    <svg class="inline-block w-4 h-4 shrink-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         aria-hidden="true">
-                      <path d="M7 7h10v10"></path>
-                      <path d="M7 17 17 7"></path>
-                    </svg>
-                  </a>
+                  {{ <ui.link_with_arrow url={item.url} text={item.display_link} transition="text_color" size="sm" /> }}
                 {% else %}
                   <span class="text-base-content/40">—</span>
                 {% endif %}

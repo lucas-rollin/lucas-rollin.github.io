@@ -8,7 +8,7 @@
       {% if lang == "pt" %}
         {% set project_url = "/pt/projects/" %}
       {% endif %}
-      {{ <ui.link_with_arrow url={project_url} text={l.back} arrow_direction="left" underline={true} target="_self" size="lg" /> }}
+      {{ <ui.link_with_arrow url={project_url} text={l.back} arrow_direction="left" transition="underline" target="_self" size="lg" /> }}
       <h1 class="text-3xl font-bold text-base-content">{{ page.title }}</h1>
       <p class="max-w-3xl text-lg text-base-content/80">{{ e.intro }}</p>
       <div class="flex flex-wrap gap-1.5">
@@ -51,7 +51,7 @@
               <li>{{ feature }}</li>
             {% endfor %}
           </ul>
-          {{ <ui.link_with_arrow url={wb.url} text={l.open} underline={true} size="lg" /> }}
+          {{ <ui.link_with_arrow url={wb.url} text={l.open} transition="underline" size="lg" /> }}
         </section>
       {% endfor %}
       <section aria-labelledby="method-heading" class="space-y-3">
