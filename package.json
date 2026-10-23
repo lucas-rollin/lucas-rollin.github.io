@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "alpinejs": "^3.17.4"
+    "alpinejs": "^3.17.5"
   },
   "scripts": {
     "build:css": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/output.css --minify",
