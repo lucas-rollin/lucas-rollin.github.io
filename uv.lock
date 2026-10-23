@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.14"
 
 [[package]]
@@ -314,7 +314,7 @@ wheels = [
 
 [[package]]
 name = "mdformat-zola"
-version = "1.0.0"
+version = "1.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markdown-it-py" },
@@ -331,9 +331,9 @@ dependencies = [
     { name = "mdformat-web" },
     { name = "mdit-py-plugins" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/15/6a/26ab37dd54e8f48c0379d0d4d49e85968e409e4c4b126bbd14a30c7010ad/mdformat_zola-1.0.0.tar.gz", hash = "sha256:c6db4f8e2b1e51ff88db6c7fa84d11664ff2c4fb352a139439d29005ade4736d", size = 21827, upload-time = "2026-07-03T17:50:24.555Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c1/4a/14eba11fc2ea18906b23a288799e4e7de0aec903a2bc70b7bf5e864dc367/mdformat_zola-1.0.1.tar.gz", hash = "sha256:3f57cea58ed356160d1ce4322476a87f573ccae3196a364febd392fc4e3b0b6a", size = 24540, upload-time = "2026-10-18T20:54:51.027Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/43/2a/119bb8a0f42b85bf341b7da34284da4a561a2342f5517ecfd761b145314c/mdformat_zola-1.0.0-py3-none-any.whl", hash = "sha256:32808ba2b708dc288d9a4ba9628e78e889d0a8ed52d3c7e5223c6229c9b0483f", size = 13001, upload-time = "2026-07-03T17:50:23.434Z" },
+    { url = "https://files.pythonhosted.org/packages/dd/e4/da84739b5e4b6dba0f1b63ef48b208c8d40f4de87a5b5bdc20703cca6520/mdformat_zola-1.0.1-py3-none-any.whl", hash = "sha256:fe0f6dcbae442482fbab93329ba87f33b9e8c365c65cad66e749cca0b40aaf3e", size = 13187, upload-time = "2026-10-18T20:54:49.786Z" },
 ]
 
 [[package]]
