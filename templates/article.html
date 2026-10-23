@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+  <article class="max-w-4xl mx-auto px-4 py-8">
+    <header class="mb-10 space-y-4">
+      {% set back_url = "/projects/" %}
+      {% if lang == "pt" %}
+        {% set back_url = "/pt/projects/" %}
+      {% endif %}
+      {{ <ui.link_with_arrow url={back_url} text={page.extra.back} arrow_direction="left" transition="underline" target="_self" size="lg" /> }}
+      <h1 class="text-4xl font-bold text-base-content">{{ page.title }}</h1>
+      {% if page.description %}
+        <p class="text-lg text-base-content/80">{{ page.description }}</p>
+      {% endif %}
+      {% if page.extra.tags %}
+        <div class="flex flex-wrap gap-1.5">
+          {% for tag in page.extra.tags %}
+            <span class="badge badge-primary badge-soft badge-sm font-medium">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </header>
+    <div class="prose prose-slate max-w-4xl prose-img:rounded-sm md:prose-img:rounded-xl prose-img:border prose-img:border-base-200">
+      {{ page.content | safe }}
+    </div>
+  </article>
+{% endblock content %}

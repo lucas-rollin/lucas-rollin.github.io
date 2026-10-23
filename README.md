@@ -43,9 +43,8 @@ This project is built as an accessible and lightweight static site:
 │   └── deploy.yml                # Automated build and GitHub Pages deployment
 ├── content/                      # Content and data files (TOML frontmatter)
 │   ├── _index.md                 # homepage (about, experience, projects)
-│   ├── certificates.md           # certificates dataset
-│   ├── projects.md               # projects dataset
-│   └── mmo-theorycrafting.md     # MMO Theorycrafting project dataset
+│   ├── certificates/             # certificates pages dataset
+│   ├── projects/                 # projects pages dataset
 ├── static/                       # Static assets
 │   ├── css/input.css             # Tailwind and DaisyUI entry CSS
 │   ├── js/                       # Alpine.js component modules
@@ -59,7 +58,7 @@ This project is built as an accessible and lightweight static site:
 │   ├── base.html                 # Main layout shell, SEO, metadata, and theme toggle
 │   ├── index.html                # Single-page portfolio layout
 │   ├── archive.html              # Responsive projects/certificates table view
-│   ├── mmo-theorycrafting.html   # MMO Theorycrafting project page
+│   ├── article.html              # Markdown-first template for long-form articles
 │   ├── components.html           # Reusable UI components (project blocks, cards, badges)
 │   └── partials/                 # Modal dialogue and navigation partials
 ├── biome.json                    # Biome linter and formatter configuration
@@ -68,7 +67,7 @@ This project is built as an accessible and lightweight static site:
 └── zola.toml                     # Zola site configuration, navigation, and i18n dictionaries
 ```
 
-content pages have a `.pt.md` Portuguese version counterpart.
+Content pages have a `.pt.md` Portuguese version counterpart.
 
 ## Development
 

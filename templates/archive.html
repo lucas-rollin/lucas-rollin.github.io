@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-  {% set cols = page.extra.columns %}
+  {% set cols = section.extra.columns %}
   <div class="max-w-7xl mx-auto px-4 py-8">
     <div class="mb-8">
       {% set home_url = "/" %}
       {% if lang == "pt" %}
         {% set home_url = "/pt/" %}
       {% endif %}
-      {{ <ui.link_with_arrow url={home_url} text={page.extra.name} arrow_direction="left" transition="underline" target="_self" size="lg" /> }}
-      <h1 class="text-3xl font-bold mt-2 text-base-content">{{ page.title }}</h1>
+      {{ <ui.link_with_arrow url={home_url} text={section.extra.name} arrow_direction="left" transition="underline" target="_self" size="lg" /> }}
+      <h1 class="text-4xl font-bold mt-2 text-base-content">{{ section.title }}</h1>
     </div>
     <div class="overflow-x-auto rounded-box border border-base-200">
       <table class="table w-full">
@@ -22,7 +22,7 @@
           </tr>
         </thead>
         <tbody>
-          {% for item in page.extra.items %}
+          {% for item in section.extra.items %}
             {% set item_link = item.url | default(value=item.link) %}
             <tr class="hover:bg-base-200/40 transition-colors duration-200">
               <td class="font-mono text-base-content/70 font-medium text-sm sm:text-base py-4">{{ item.year }}</td>
