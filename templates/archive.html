@@ -36,7 +36,7 @@
                 {% if item_link %}
                   <span class="hidden sm:inline">{{ item.title }}</span>
                   <span class="sm:hidden">
-                    {{ <ui.link_with_arrow url={item.url} text={item.title} arrow_direction={arrow} transition="text_color" target={link_target} size="sm" /> }}
+                    {{ <ui.link_with_arrow url={item.url} text={item.title} arrow_direction={arrow} transition="text_color" target={link_target} size="sm" translate="0.5" /> }}
                   </span>
                   {% if item.description %}
                     <p class="text-xs sm:text-sm font-normal text-base-content/70 leading-snug max-w-md">{{ item.description }}</p>
