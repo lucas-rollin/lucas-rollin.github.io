@@ -75,36 +75,7 @@
             {{ <ui.link_with_arrow
               url={trans(key="resume_url", lang=lang)}
               text={trans(key="view_resume", lang=lang)}
-              arrow_direction="right"
               transition="underline"
-              /> }}
-          </div>
-        </section>
-        <section id="education" class="relative md:static space-y-2 md:space-y-4">
-          <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
-            {{ trans(key="education", lang=lang) }}
-          </h3>
-          {% if section.extra.education %}
-            <div class="dim-siblings space-y-4 md:space-y-2">
-              {% for ed in section.extra.education %}
-                {{ <ui.education_block
-                  url={ed.url}
-                  date={ed.date}
-                  institution={ed.institution}
-                  degree={ed.degree}
-                  description={ed.description}
-                  logo={ed.logo or ""}
-                  /> }}
-              {% endfor %}
-            </div>
-          {% endif %}
-          <div class="pl-4 pt-2 font-semibold">
-            {{ <ui.link_with_arrow
-              url="certificates/"
-              text={trans(key="view_certificates", lang=lang)}
-              arrow_direction="right"
-              transition="underline"
-              target="_self"
               /> }}
           </div>
         </section>
@@ -134,6 +105,34 @@
                 /> }}
             </div>
           {% endif %}
+        </section>
+        <section id="education" class="relative md:static space-y-2 md:space-y-4">
+          <h3 class="sticky top-0 z-10 backdrop-blur-sm bg-base-100/70 py-4 text-2xl font-extrabold tracking-tight md:hidden -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-16 lg:px-16">
+            {{ trans(key="education", lang=lang) }}
+          </h3>
+          {% if section.extra.education %}
+            <div class="dim-siblings space-y-4 md:space-y-2">
+              {% for ed in section.extra.education %}
+                {{ <ui.education_block
+                  url={ed.url}
+                  date={ed.date}
+                  institution={ed.institution}
+                  degree={ed.degree}
+                  description={ed.description}
+                  logo={ed.logo or ""}
+                  /> }}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="pl-4 pt-2 font-semibold">
+            {{ <ui.link_with_arrow
+              url="certificates/"
+              text={trans(key="view_certificates", lang=lang)}
+              arrow_direction="right"
+              transition="underline"
+              target="_self"
+              /> }}
+          </div>
         </section>
         <footer class="space-y-4">
           <div class="flex justify-center pt-2 border-t border-base-300">
