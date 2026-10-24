@@ -16,3 +16,5 @@ package = false
 profile = "tera"
 indent = 2
 exclude = "public/"
+preserve_blank_lines = true
+max_blank_lines = 1

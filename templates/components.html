@@ -1,5 +1,5 @@
-{% component ui.link_with_arrow(url, text, arrow_direction="top_right", transition="none", absolute=false, target="_blank", size="md") %}
-  {# transition: "none" | "underline" | "text_color" (unknown values behave like "none") #}
+{% component ui.link_with_arrow(url, text, arrow_direction="top_right", transition="none", absolute=false, target="_blank", size="md", translate="1.5") %}
+  {# Transition #}
   {% set anchor_cls = "" %}
   {% set underline_cls = "" %}
   {% set arrow_cls = "" %}
@@ -9,6 +9,8 @@
   {% elif transition == "text_color" %}
     {% set anchor_cls = "transition-colors duration-300 ease-in-out hover:text-primary" %}
   {% endif %}
+
+  {# Sizing #}
   {% set size_cls = "" %}
   {% if size == "lg" %}
     {% set size_cls = "text-lg" %}
@@ -17,16 +19,39 @@
   {% if size == "sm" %}
     {% set icon_cls = "w-4 h-4" %}
   {% endif %}
+
+  {# Layout #}
   {% set abs_cls = "" %}
   {% if absolute %}
     {% set abs_cls = "md:after:absolute md:after:inset-0" %}
   {% endif %}
+
+  {# Arrow Hover Motion #}
+  {% set move_cls = "" %}
+  {% if translate == "0.5" %}
+    {% if arrow_direction == "left" %}
+      {% set move_cls = "group-hover/link:-translate-x-0.5" %}
+    {% elif arrow_direction == "top_right" %}
+      {% set move_cls = "group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" %}
+    {% else %}
+      {% set move_cls = "group-hover/link:translate-x-0.5" %}
+    {% endif %}
+  {% elif translate == "1.5" %}
+    {% if arrow_direction == "left" %}
+      {% set move_cls = "group-hover/link:-translate-x-1.5" %}
+    {% elif arrow_direction == "top_right" %}
+      {% set move_cls = "group-hover/link:-translate-y-1 group-hover/link:translate-x-1" %}
+    {% else %}
+      {% set move_cls = "group-hover/link:translate-x-1.5" %}
+    {% endif %}
+  {% endif %}
+
   {% if arrow_direction == "left" %}
     {# Arrow goes before the text, so no word splitting is needed #}
     <a href="{{ url }}"
        target="{{ target }}"
        class="inline-flex items-center gap-1 group/link w-fit {{ size_cls }} {{ anchor_cls }} {{ abs_cls }}">
-      <svg class="inline-block {{ icon_cls }} translate-y-px shrink-0 transition-transform duration-300 ease-in-out group-hover/link:-translate-x-1.5 {{ arrow_cls }}"
+      <svg class="inline-block {{ icon_cls }} translate-y-px shrink-0 transition-transform duration-300 ease-in-out {{ move_cls }} {{ arrow_cls }}"
            xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 24 24"
            fill="none"
@@ -50,7 +75,7 @@
           {% if loop.last %}
             <span class="inline-block whitespace-nowrap {{ underline_cls }}">
               {{ word }}
-              <svg class="inline-block {{ icon_cls }} translate-y-px shrink-0 transition-transform duration-300 ease-in-out {% if arrow_direction == 'top_right' %} group-hover/link:-translate-y-1 group-hover/link:translate-x-1 {% else %} group-hover/link:translate-x-1.5 {% endif %} {{ arrow_cls }}"
+              <svg class="inline-block {{ icon_cls }} translate-y-px shrink-0 transition-transform duration-300 ease-in-out {{ move_cls }} {{ arrow_cls }}"
                    xmlns="http://www.w3.org/2000/svg"
                    viewBox="0 0 24 24"
                    fill="none"
