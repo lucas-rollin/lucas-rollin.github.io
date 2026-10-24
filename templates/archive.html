@@ -23,30 +23,21 @@
         </thead>
         <tbody>
           {% for item in section.extra.items %}
+            {% set arrow = "top_right" %}
+            {% set link_target = "_blank" %}
+            {% if item.internal %}
+              {% set arrow = "right" %}
+              {% set link_target = "_self" %}
+            {% endif %}
             {% set item_link = item.url | default(value=item.link) %}
             <tr class="hover:bg-base-200/40 transition-colors duration-200">
               <td class="font-mono text-base-content/70 font-medium text-sm sm:text-base py-4">{{ item.year }}</td>
               <td class="font-semibold text-base-content">
                 {% if item_link %}
                   <span class="hidden sm:inline">{{ item.title }}</span>
-                  <a href="{{ item_link | safe }}"
-                     class="sm:hidden group gap-1 inline normal-case hover:text-primary transition-colors duration-300 ease-in-out"
-                     target="_blank"
-                     rel="noopener noreferrer">
-                    <span>{{ item.title }}</span>
-                    <svg class="inline-block w-4 h-4 translate-y-px shrink-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         aria-hidden="true">
-                      <path d="M7 7h10v10"></path>
-                      <path d="M7 17 17 7"></path>
-                    </svg>
-                  </a>
+                  <span class="sm:hidden">
+                    {{ <ui.link_with_arrow url={item.url} text={item.title} arrow_direction={arrow} transition="text_color" target={link_target} size="sm" /> }}
+                  </span>
                   {% if item.description %}
                     <p class="text-xs sm:text-sm font-normal text-base-content/70 leading-snug max-w-md">{{ item.description }}</p>
                   {% endif %}
@@ -72,12 +63,6 @@
               </td>
               <td class="hidden sm:table-cell">
                 {% if item_link %}
-                  {% set arrow = "top_right" %}
-                  {% set link_target = "_blank" %}
-                  {% if item.internal %}
-                    {% set arrow = "right" %}
-                    {% set link_target = "_self" %}
-                  {% endif %}
                   {{ <ui.link_with_arrow url={item.url} text={item.display_link} arrow_direction={arrow} transition="text_color" target={link_target} size="sm" /> }}
                 {% else %}
                   <span class="text-base-content/40">—</span>
