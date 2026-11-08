@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4",
-    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/cli": "^4.3.4",
     "@tailwindcss/typography": "^0.5.20",
     "daisyui": "^5.7.50",
     "esbuild": "^0.28.2",
