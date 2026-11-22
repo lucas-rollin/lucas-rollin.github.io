@@ -12,10 +12,10 @@
     "check": "npx biome check . && uv run djlint --lint --check . && uv run mdformat --check content/ && npm run build:site"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.7",
+    "@biomejs/biome": "2.6.8",
     "@tailwindcss/cli": "^4.3.5",
     "@tailwindcss/typography": "^0.5.20",
-    "daisyui": "^5.8.0",
+    "daisyui": "^5.8.1",
     "esbuild": "^0.28.2",
     "tailwindcss": "^4.3.3"
   }
